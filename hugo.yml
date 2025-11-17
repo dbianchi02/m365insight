@@ -1,7 +1,9 @@
 baseURL: "https://m365insight.dbianchi.it/"
 title: "M365 Insight"
 theme: "PaperMod"
-paginate: 10
+
+pagination:
+  pagerSize: 10
 
 params:
   defaultTheme: auto
