@@ -24,3 +24,7 @@ menu:
       name: Articoli
       url: /posts/
       weight: 2
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 3
