@@ -1,16 +1,26 @@
 ---
 title: "M365 Insight"
-description: "Approfondimenti tecnici su Microsoft 365, sicurezza, governance e automazioni."
+description: "Approfondimenti tecnici e best practice sull'amministrazione del mondo Microsoft 365"
 cascade:
   showReadingTime: true
   showToc: true
   showCodeCopyButtons: true
 ---
 
-Benvenuto su **M365 Insight**.
+# Benvenuto su M365 Insight
 
-In questo blog voglio condividere la mia esperienza quotidiana come Microsoft 365 Administrator: script, idee, novità e riflessioni su come gli strumenti Microsoft stanno cambiando il modo di lavorare.
+Sono **Davide Bianchi**, professionista dell'IT specializzato nella gestione e nella sicurezza degli ambienti **Microsoft 365** e **Azure**.  
+In questo sito pubblico articoli tecnici, procedure operative e approfondimenti pratici per amministratori, system engineer e cloud specialist.
 
-Dalla governance di tenant complessi all’arrivo di Copilot, passando per sicurezza, compliance e automazione, questo spazio nasce per confrontarsi, imparare e crescere insieme nella gestione moderna dell’ambiente Microsoft.
+Qui troverai:
 
-👇 Vai alla sezione **Articoli** per leggere gli ultimi post.
+- 👉 Guide operative su Microsoft 365  
+- 👉 Governance, sicurezza, automazione  
+- 👉 Script PowerShell  
+- 👉 Best practice reali da ambienti enterprise  
+- 👉 Troubleshooting quotidiano da un sistemista sul campo
+
+---
+
+# Ultimi articoli
+Consulta la sezione **Articoli** per leggere gli ultimi post pubblicati.

@@ -28,3 +28,7 @@ menu:
       name: About Me
       url: /about/
       weight: 3
+    - identifier: contatti
+      name: Contatti
+      url: /contatti/
+      weight: 4
