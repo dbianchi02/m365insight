@@ -1,0 +1,24 @@
+baseURL: "https://m365insight.dbianchi.it/"
+title: "M365 Insight"
+theme: "PaperMod"
+paginate: 10
+
+params:
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowToc: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: posts
+      name: Articoli
+      url: /posts/
+      weight: 2
