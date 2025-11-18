@@ -3,21 +3,24 @@ title: "M365 Insight"
 description: "Guide tecniche, automazioni e best practice su Microsoft 365 e Azure"
 ---
 
-<div align="center">
+# 👋 Benvenuto su **M365 Insight**
 
-# 🚀 Benvenuto su **M365 Insight**
 ### Tecnologie Microsoft 365 · Sicurezza · Automazione · Azure
 
-<img src="/images/banner.png" alt="Banner M365 Insight" width="75%" style="border-radius:12px; margin-top:20px;" />
+Questo sito raccoglie guide tecniche, procedure operative, automazioni e best practice che utilizzo ogni giorno nel mondo Microsoft 365 e Azure. L’obiettivo è offrire soluzioni pratiche, chiare e realmente applicabili per sistemisti, amministratori IT e professionisti del cloud.
 
 ---
 
-## 🔒 Identità & Sicurezza · ☁ Cloud · ⚙ Automazione · 🎯 Governance
+## 🛠 Aree Tematiche
 
-</div>
+🔐 **Identità & Sicurezza**  
+☁️ **Cloud**  
+⚙️ **Automazione IT**  
+🗂️ **Governance**  
 
 ---
 
-# Ultimi Articoli
+## 📰 Ultimi Articoli
 
-Benvenuto nella sezione dedicata alle ultime pubblicazioni.
+Benvenuto nella sezione dedicata alle ultime pubblicazioni.  
+Puoi esplorare tutte le guide tecniche nella sezione **Articoli** o usare la barra di ricerca integrata nel sito.

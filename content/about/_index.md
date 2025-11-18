@@ -1,9 +1,6 @@
 ---
-title: "About Me"
-description: "Chi sono e cosa faccio"
+title: "Chi sono"
 ---
-
-# Chi sono
 
 Sono Davide Bianchi, un professionista dell’IT specializzato nella gestione e nella sicurezza degli ambienti **Microsoft 365 e Azure**.  
 Il mio percorso non è iniziato nell’informatica: ho conseguito un diploma da Geometra, ma ben presto ho scoperto una passione molto più forte per la tecnologia e la gestione dei servizi IT.  
@@ -18,7 +15,7 @@ Oggi lavoro quotidianamente su progetti Microsoft 365 in contesti enterprise, co
 Mi occupo di:
 
 ### 🖥 Microsoft 365 Administration
-- Configurazione e gestione di **Teams, SharePoint, Exchange Online, OneDrive, Power BI**  
+- Configurazione e gestione di **Teams, SharePoint, OneDrive, Exchange Online, Power BI, Fabric**  
 - **Assessment e remediation plan** per migliorare la sicurezza e l’adozione del tenant  
 - Monitoraggio di **Service Health** e gestione delle comunicazioni del Message Center  
 - Ottimizzazione delle licenze e dei relativi service plan

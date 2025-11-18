@@ -16,7 +16,8 @@ params:
 
   profileMode:
     enabled: true
-    imageUrl: "/images/davide.jpg"
+    disableContent: false
+    imageUrl: "/images/davide.png"
     imageWidth: 180
     imageHeight: 180
     title: "Davide Bianchi"
@@ -28,6 +29,8 @@ params:
         url: "/progetti/"
       - name: About Me
         url: "/about/"
+      - name: Contact
+        url: "/contatti/"
 
   footer:
     enable: true
