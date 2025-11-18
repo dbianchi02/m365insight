@@ -1,16 +1,11 @@
 baseURL: "https://m365insight.dbianchi.it/"
-languageCode: "it"
 title: "M365 Insight"
 theme: "PaperMod"
 
-# Pagination aggiornata per le versioni recenti di Hugo
 pagination:
   pagerSize: 10
 
 params:
-  # Fix obbligatorio per PaperMod
-  SiteVerificationTag: ""
-
   defaultTheme: auto
   ShowShareButtons: true
   ShowReadingTime: true
@@ -18,12 +13,9 @@ params:
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
   ShowToc: true
-  ShowRssButtonInSectionTermList: true
 
-  # ⭐ PROFILE MODE (in alto nella homepage)
   profileMode:
     enabled: true
-    disableContent: false
     imageUrl: "/images/davide.jpg"
     imageWidth: 180
     imageHeight: 180
@@ -36,30 +28,16 @@ params:
         url: "/progetti/"
       - name: About Me
         url: "/about/"
-      - name: Contatti
-        url: "/contatti/"
 
-  # ⭐ FOOTER PERSONALIZZATO
   footer:
     enable: true
     customText: "© 2025 Davide Bianchi · M365 Insight"
     socialIcons:
       - name: linkedin
-        url: "https://www.linkedin.com/in/davide-bianchi-7b6805257/"
+        url: "https://www.linkedin.com/in/davide-bianchi-cloud/"
       - name: github
         url: "https://github.com/dbianchi02"
 
-  # ⭐ SEO / Social preview
-  env: production
-  images: ["/images/banner.png"]
-
-  # SEO avanzata (opzionale)
-  analytics:
-    google: ""
-    bing: ""
-    yandex: ""
-
-# ⭐ MENU PRINCIPALE
 menu:
   main:
     - identifier: home
@@ -82,14 +60,7 @@ menu:
       url: /about/
       weight: 4
 
-    - identifier: contatti
-      name: Contatti
+    - identifier: contact
+      name: Contact Me
       url: /contatti/
       weight: 5
-
-# Configurazioni di base Hugo / PaperMod
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
