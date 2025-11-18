@@ -17,6 +17,8 @@ params:
   ShowToc: true
   ShowRssButtonInSectionTermList: true
 
+  SiteVerificationTag: ""   # <--- FIX OBBLIGATORIO
+
   # ⭐ PROFILE MODE (in alto nella homepage)
   profileMode:
     enabled: true
