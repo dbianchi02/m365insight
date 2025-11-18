@@ -1,11 +1,7 @@
 ---
 title: "Progetti IT"
-description: "Automazioni, script e soluzioni tecniche"
+description: "Raccolta dei miei progetti tecnici, script PowerShell, automazioni Microsoft 365 e implementazioni Azure."
 ---
-
-# Progetti IT
-
-Raccolta dei miei progetti tecnici, script PowerShell, automazioni Microsoft 365 e implementazioni Azure.
 
 ## 🔧 Automazioni Microsoft 365
 - Script PowerShell per onboarding utenti
