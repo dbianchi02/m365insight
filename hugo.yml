@@ -1,4 +1,9 @@
 # Pagination aggiornata per le versioni recenti di Hugo
+baseURL: "https://m365insight.dbianchi.it/"
+languageCode: "it"
+title: "M365 Insight"
+theme: "PaperMod"
+
 pagination:
   pagerSize: 10
 
