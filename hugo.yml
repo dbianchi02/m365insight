@@ -1,13 +1,16 @@
-# Pagination aggiornata per le versioni recenti di Hugo
 baseURL: "https://m365insight.dbianchi.it/"
 languageCode: "it"
 title: "M365 Insight"
 theme: "PaperMod"
 
+# Pagination aggiornata per le versioni recenti di Hugo
 pagination:
   pagerSize: 10
 
 params:
+  # Fix obbligatorio per PaperMod
+  SiteVerificationTag: ""
+
   defaultTheme: auto
   ShowShareButtons: true
   ShowReadingTime: true
@@ -17,12 +20,10 @@ params:
   ShowToc: true
   ShowRssButtonInSectionTermList: true
 
-  SiteVerificationTag: ""   # <--- FIX OBBLIGATORIO
-
   # ⭐ PROFILE MODE (in alto nella homepage)
   profileMode:
     enabled: true
-    disableContent: false   # <--- permette di vedere ANCHE la homepage personalizzata
+    disableContent: false
     imageUrl: "/images/davide.jpg"
     imageWidth: 180
     imageHeight: 180
@@ -52,7 +53,7 @@ params:
   env: production
   images: ["/images/banner.png"]
 
-  # SEO avanzata (opzionale ma consigliata)
+  # SEO avanzata (opzionale)
   analytics:
     google: ""
     bing: ""
