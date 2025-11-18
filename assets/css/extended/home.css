@@ -1,0 +1,156 @@
+/* Allarga il contenuto stile “full width” */
+:root {
+    --main-width: 1180px;
+}
+
+/* Sezioni home in stile Microsoft Learn */
+.db-hero {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.db-hero-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.db-hero-image {
+    max-width: 80%;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.db-hero-image:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Griglia cards (Latest Posts + Novità 2025) */
+.db-home-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .db-home-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Card stile Microsoft Docs */
+.db-card {
+    background: var(--entry);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--border);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.db-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    border-color: var(--primary);
+}
+
+/* Titoli sezioni */
+.db-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.db-section-subtitle {
+    opacity: 0.85;
+    margin-bottom: 0.8rem;
+}
+
+/* Latest posts list */
+.db-latest-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.8rem 0;
+}
+
+.db-latest-item + .db-latest-item {
+    margin-top: 0.4rem;
+}
+
+.db-latest-link {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.db-latest-link:hover {
+    text-decoration: underline;
+}
+
+.db-latest-meta {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* CTA */
+.db-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--entry);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 0.4rem;
+    transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.db-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Box Novità 2025 con fondo azzurro */
+.db-novita {
+    background: linear-gradient(135deg, #0f6cbd1a, #3aa0ff26);
+    border-color: #0f6cbd55;
+}
+
+.db-novita-list {
+    margin: 0.4rem 0 0;
+    padding-left: 1.1rem;
+}
+
+/* Contenuto _index.md più vicino ai post */
+.db-home-content {
+    margin-bottom: 1.5rem;
+}
+
+/* Compatta la lista articoli in home */
+.db-home-list .post-entry {
+    margin-top: 0.8rem;
+}
+
+/* Micro animazioni Fluent-style */
+.db-fade-in {
+    animation: dbFadeUp 280ms ease-out both;
+}
+
+.db-fade-in-slow {
+    animation: dbFadeUp 420ms ease-out both;
+}
+
+@keyframes dbFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

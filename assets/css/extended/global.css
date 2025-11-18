@@ -1,0 +1,36 @@
+/* Global transitions for smooth Fluent-like feel */
+* {
+    transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+/* Slight hover lift for cards and entries */
+.post-entry,
+.first-entry,
+.tag-entry {
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.post-entry:hover,
+.tag-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* Full width pages */
+:root {
+    --main-width: 1180px;
+}
+
+/* Fade-in animation used across the entire site */
+.db-fade-in {
+    animation: dbFadeUp 280ms ease-out both;
+}
+
+.db-fade-in-slow {
+    animation: dbFadeUp 420ms ease-out both;
+}
+
+@keyframes dbFadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
