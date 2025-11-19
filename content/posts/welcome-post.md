@@ -1,5 +1,5 @@
 +++
-date = '2025-11-20T12:00:00+01:00'
+date = '2025-11-17T20:12:26Z'
 draft = false
 title = 'Welcome Post'
 tags = ['Benvenuto', 'Microsoft 365', 'Azure', 'Blog']
