@@ -2,7 +2,6 @@
 date = '2025-11-17T20:12:20Z'
 draft = false
 title = 'Welcome Post'
-tags = ['Benvenuto', 'Microsoft 365', 'Azure', 'Blog']
 summary = "Introduzione al blog M365 Insight"
 +++
 

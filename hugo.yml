@@ -69,3 +69,11 @@ menu:
       name: Contact Me
       url: /contatti/
       weight: 5
+
+resourceDir: "assets"
+
+imaging:
+  # Configurazioni standard per la qualità dell'immagine e ottimizzazione delle risorse.
+  # Necessario per processare correttamente le immagini (come la favicon)
+  quality: 75
+  resampleFilter: Box
