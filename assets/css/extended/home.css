@@ -159,32 +159,32 @@
    INIZIO: STILE PER LE AREE DI COMPETENZA (Carte Tematiche) 
    ========================================================= */
 
+/* Modifica il titolo per farlo sembrare un sottotitolo (più pulito) */
 .db-competence-grid h2 {
-    /* Utilizza lo stile del db-section-title esistente, ma senza il bordo inferiore. */
-    /* Rimuovi la linea nera/blu: border-bottom: none; */
-    font-size: 1.25rem; 
+    font-size: 1.1em; /* Unificato con .db-subtitle-home */
+    font-weight: 500;
+    opacity: 0.8;
     margin-top: 2rem; 
-    margin-bottom: 0.5rem; /* Riduci il margine inferiore */
+    margin-bottom: 0.5rem; 
     padding-bottom: 0;
-    border-bottom: none; /* RIMUOVI LA LINEA SEPARATRICE */
+    border-bottom: none; /* Rimuove la linea separatrice */
 }
 
-/* NUOVO STILE PER LA DESCRIZIONE INTRODUTTIVA */
+/* NUOVO STILE PER LA DESCRIZIONE INTRODUTTIVA GENERALE */
 .db-competence-intro {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 2rem; /* Aggiungi spazio sotto la descrizione e sopra le card */
-    opacity: 0.9; /* Leggermente meno in evidenza del titolo */
-    max-width: 900px; /* Limita la larghezza del testo su schermi grandi */
+    margin-bottom: 2rem; 
+    opacity: 0.9;
+    max-width: 900px;
 }
 
-/* Container per la griglia delle carte - I margini di coerenza sono già nel codice */
+/* Container della griglia - Aumenta lo spazio sotto le card */
 .db-card-container {
     display: grid;
-    /* La griglia si adatta, con un minimo di 300px per colonna */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 1.5rem; 
-    margin-bottom: 3rem; /* Aumenta il margine in basso per separare bene dalla lista articoli */
+    margin-bottom: 3rem; /* Spazio prima della lista articoli */
 }
 
 /* Stile della singola card: Ereditiamo da .db-card per look & feel */
@@ -237,3 +237,33 @@
 /* =========================================================
    FINE: STILE PER LE AREE DI COMPETENZA
    ========================================================= */
+
+/* =========================================================
+3. STILE PER LA SEZIONE DI BENVENUTO (Welcome Box)
+========================================================= */
+
+.db-welcome-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Spazio prima della griglia news */
+}
+
+.db-title-home {
+    font-size: 2.2em; /* Titolo grande */
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.db-subtitle-home {
+    font-size: 1.1em;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 1.2rem; /* Spazio prima del testo lungo */
+}
+
+.db-intro-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    opacity: 0.95;
+    margin-bottom: 0;
+}
