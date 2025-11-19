@@ -154,3 +154,76 @@
         transform: translateY(0);
     }
 }
+
+/* =========================================================
+   INIZIO: STILE PER LE AREE DI COMPETENZA (Carte Tematiche) 
+   ========================================================= */
+
+.db-competence-grid h2 {
+    /* Utilizza il tuo stile db-section-title con margine superiore consistente */
+    font-size: 1.25rem; 
+    margin-top: 2rem; /* Spazio per separare dalla griglia sopra */
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid var(--primary); /* Separatore elegante */
+}
+
+/* Container per la griglia delle carte (si adatta a 2 colonne su desktop) */
+.db-card-container {
+    display: grid;
+    /* La griglia si adatta, con un minimo di 300px per colonna */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1.5rem; /* Usa la stessa spaziatura della griglia principale */
+    margin-bottom: 1.5rem;
+}
+
+/* Stile della singola card: Ereditiamo da .db-card per look & feel */
+.db-competence-card {
+    /* Ereditiamo gli stili visivi, ma aggiungiamo il layout flex */
+    background: var(--entry);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--border);
+    color: var(--primary); 
+    text-decoration: none; 
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* Applichiamo il tuo effetto hover */
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.db-competence-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    border-color: var(--primary); /* Bordo accentuato all'hover */
+}
+
+/* Stile Icona */
+.db-competence-card .icon {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+    line-height: 1; 
+}
+
+/* Stile Titolo */
+.db-competence-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary); 
+}
+
+/* Stile Descrizione */
+.db-competence-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+/* =========================================================
+   FINE: STILE PER LE AREE DI COMPETENZA
+   ========================================================= */
