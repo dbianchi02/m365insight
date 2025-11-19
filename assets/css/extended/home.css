@@ -160,21 +160,31 @@
    ========================================================= */
 
 .db-competence-grid h2 {
-    /* Utilizza il tuo stile db-section-title con margine superiore consistente */
+    /* Utilizza lo stile del db-section-title esistente, ma senza il bordo inferiore. */
+    /* Rimuovi la linea nera/blu: border-bottom: none; */
     font-size: 1.25rem; 
-    margin-top: 2rem; /* Spazio per separare dalla griglia sopra */
-    margin-bottom: 1rem;
-    padding-bottom: 0.2rem;
-    border-bottom: 2px solid var(--primary); /* Separatore elegante */
+    margin-top: 2rem; 
+    margin-bottom: 0.5rem; /* Riduci il margine inferiore */
+    padding-bottom: 0;
+    border-bottom: none; /* RIMUOVI LA LINEA SEPARATRICE */
 }
 
-/* Container per la griglia delle carte (si adatta a 2 colonne su desktop) */
+/* NUOVO STILE PER LA DESCRIZIONE INTRODUTTIVA */
+.db-competence-intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem; /* Aggiungi spazio sotto la descrizione e sopra le card */
+    opacity: 0.9; /* Leggermente meno in evidenza del titolo */
+    max-width: 900px; /* Limita la larghezza del testo su schermi grandi */
+}
+
+/* Container per la griglia delle carte - I margini di coerenza sono già nel codice */
 .db-card-container {
     display: grid;
     /* La griglia si adatta, con un minimo di 300px per colonna */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 1.5rem; /* Usa la stessa spaziatura della griglia principale */
-    margin-bottom: 1.5rem;
+    gap: 1.5rem; 
+    margin-bottom: 3rem; /* Aumenta il margine in basso per separare bene dalla lista articoli */
 }
 
 /* Stile della singola card: Ereditiamo da .db-card per look & feel */
