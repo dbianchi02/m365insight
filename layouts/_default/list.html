@@ -48,10 +48,6 @@
   </section>
 
   {{- partial "thematic_cards.html" . -}} {{- /* INSERIMENTO NUOVE CARDS QUI */}}
-
-  {{- /* Contenuto di content/_index.md (testo tipo Microsoft Learn) */}}
-  {{- if .Content }}
-
   {{- /* Contenuto di content/_index.md (testo tipo Microsoft Learn) */}}
   {{- if .Content }}
   <div class="post-content db-home-content db-fade-in-slow">
@@ -222,4 +218,6 @@
 
 {{- end }}{{/* fine ramo non-home */}}
 
-{{- end }}{{- /* end main */ -}}
+{{- end }}{{/* CHIUSURA MANCANTE DI {{- if .IsHome }} (riga 3) */}}
+
+{{- end }}{{- /* CHIUSURA MANCANTE DI {{- define "main" }} (riga 1) */}}
