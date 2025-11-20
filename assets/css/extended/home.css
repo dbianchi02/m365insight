@@ -182,9 +182,19 @@
 /* Container della griglia - Aumenta lo spazio sotto le card */
 .db-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* NUOVA REGOLA: Forziamo la griglia a 2 colonne su schermi medi/grandi */
+    /* Usiamo 1fr 1fr per due colonne di pari larghezza */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 1.5rem; 
-    margin-bottom: 3rem; /* Spazio prima della lista articoli */
+    margin-bottom: 3rem; 
+}
+
+/* Gestione per schermi molto piccoli (es. smartphone) */
+@media screen and (max-width: 600px) {
+    .db-card-container {
+        /* Torna a una colonna singola su mobile */
+        grid-template-columns: 1fr; 
+    }
 }
 
 /* Stile della singola card: Ereditiamo da .db-card per look & feel */
@@ -237,15 +247,34 @@
 /* =========================================================
    FINE: STILE PER LE AREE DI COMPETENZA
    ========================================================= */
+/* =========================================================
+   0. STILE GLOBALE DEI CONTENITORI CUSTOM (Centratura e Larghezza)
+   ========================================================= */
+
+.db-welcome-box,
+.db-home-grid,
+.db-competence-grid {
+    /* 1. Centratura del blocco */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 2. Limita la larghezza massima per allinearsi al contenuto del tema */
+    max-width: var(--content-width); 
+    
+    /* 3. Padding per evitare che il contenuto tocchi i bordi laterali su mobile */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Regola specifica per lo spazio verticale tra il benvenuto e la griglia */
+.db-welcome-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
 
 /* =========================================================
 3. STILE PER LA SEZIONE DI BENVENUTO (Welcome Box)
 ========================================================= */
-
-.db-welcome-box {
-    margin-top: 2rem;
-    margin-bottom: 2rem; /* Spazio prima della griglia news */
-}
 
 .db-title-home {
     font-size: 2.2em; /* Titolo grande */
