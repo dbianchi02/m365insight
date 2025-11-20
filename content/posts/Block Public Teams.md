@@ -16,7 +16,7 @@ In un ambiente di lavoro moderno e collaborativo come Microsoft Teams, la facili
 
 In Microsoft Teams, la creazione di un team è strettamente legata alla creazione di un gruppo Microsoft 365 (O365 Group). Se si desidera impedire agli utenti di creare team pubblici, ma consentire la creazione di team privati, la soluzione non è limitare la creazione di gruppi *tout court*, bensì imporre una configurazione di privacy tramite etichette di sensibilità (Sensitivity Labels) gestite con **Microsoft Purview Information Protection**.
 
-Questo approccio offre un controllo granulare, permettendo agli amministratori di definire le regole di utilizzo e la privacy per i dati e i contenitori, senza bloccare la produttività degli utenti.
+Questo approccio offre un controllo granulare, permettendo agli amministratori di definire le regole di utilizzo e la privacy per i dati, senza bloccare la produttività degli utenti.
 
 ---
 
@@ -24,7 +24,7 @@ Questo approccio offre un controllo granulare, permettendo agli amministratori d
 
 Prima di iniziare, assicurati di avere i seguenti requisiti:
 
-* **Licenza Microsoft 365** che supporti Sensitivity Labels per contenitori (Teams, SharePoint, Groups). Tipicamente, questo include licenze come Microsoft 365 E3 (con add-on) o E5, o le versioni equivalenti.
+* **Licenza Microsoft 365** che supporti Sensitivity Labels (Teams, SharePoint, Groups). Tipicamente, questo include licenze come Microsoft 365 E3 (con add-on) o E5, o le versioni equivalenti.
 * Accesso al **Microsoft Purview Compliance Portal** (attualmente `https://compliance.microsoft.com`).
 * Permessi di amministratore per creare e pubblicare etichette.
 
@@ -41,7 +41,7 @@ Per prima cosa, verifica che la funzionalità sia attiva nel tuo tenant.
 * Accedere al **Microsoft Purview Compliance Portal** → **Information Protection** → **Labels**.
 ![Purview Portal](/images/posts/governance/label-portal.png)
 * Verificare che la funzionalità sia attiva per **Teams, Groups e Sites**.
-    * *Nota:* Se non lo è, potresti dover seguire la [guida ufficiale Microsoft](https://learn.microsoft.com/en-us/microsoft-365/compliance/enable-sensitivity-labels-for-containers?view=o365-worldwide) per abilitarla via PowerShell.
+    * *Nota:* Se non lo è, potresti dover seguire la [guida ufficiale Microsoft](https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites#how-to-configure-groups-and-site-settings) per abilitarla via PowerShell.
 
 #### 2. Creare una nuova Sensitivity Label
 

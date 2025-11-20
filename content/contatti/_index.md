@@ -1,5 +1,6 @@
 ---
 title: "Contatti"
+draft: false
 description: "Se vuoi confrontarti su progetti Microsoft 365, governance, sicurezza o automazioni IT, puoi contattarmi tramite i canali seguenti:"
 ---
 

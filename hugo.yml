@@ -27,9 +27,11 @@ params:
     buttons:
       - name: Articoli
         url: "/posts/"
-      - name: About Me
-        url: "/about/"
-      - name: Contact
+      # MODIFICA: Uso il nome "Chi sono" per coerenza
+      - name: Chi sono
+        url: "/chi-sono/"
+      # MODIFICA: Uso il nome "Contattami" per coerenza
+      - name: Contattami
         url: "/contatti/"
 
   footer:
@@ -49,15 +51,17 @@ menu:
       weight: 1
 
     - identifier: posts
-      name: Articoli
+      name: Posts
       url: /posts/
       weight: 2
 
+    # MODIFICA: La pagina che hai creato è 'chi-sono.md', quindi usiamo /chi-sono/
     - identifier: about
       name: About Me
-      url: /about/
+      url: /chi-sono/
       weight: 4
 
+    # MODIFICA: Uso 'Contattami' come nome e url, coerentemente con i button
     - identifier: contact
       name: Contact Me
       url: /contatti/
@@ -66,7 +70,5 @@ menu:
 resourceDir: "assets"
 
 imaging:
-  # Configurazioni standard per la qualità dell'immagine e ottimizzazione delle risorse.
-  # Necessario per processare correttamente le immagini (come la favicon)
   quality: 75
   resampleFilter: Box
