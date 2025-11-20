@@ -4,9 +4,6 @@ date: 2025-11-20T10:00:00+02:00
 draft: false
 tags: ["Microsoft Teams", "Sensitivity Labels", "Governance", "Sicurezza M365", "Microsoft Purview"]
 description: "Scopri come impedire la creazione di team pubblici in Microsoft Teams utilizzando le Sensitivity Labels di Microsoft Purview, garantendo maggiore controllo e sicurezza."
-cover:
-    image: "/images/posts/block-public-teams.png" # Immagine in evidenza per l'articolo
-    caption: "Gestisci la privacy dei tuoi team con le Sensitivity Labels"
 ---
 
 ## Introduzione
@@ -15,7 +12,7 @@ In un ambiente di lavoro moderno e collaborativo come Microsoft Teams, la facili
 
 ---
 
-### Perché utilizzare le Sensitivity Labels? 🏷️
+### Perché utilizzare le Sensitivity Labels?
 
 In Microsoft Teams, la creazione di un team è strettamente legata alla creazione di un gruppo Microsoft 365 (O365 Group). Se si desidera impedire agli utenti di creare team pubblici, ma consentire la creazione di team privati, la soluzione non è limitare la creazione di gruppi *tout court*, bensì imporre una configurazione di privacy tramite etichette di sensibilità (Sensitivity Labels) gestite con **Microsoft Purview Information Protection**.
 
@@ -23,7 +20,7 @@ Questo approccio offre un controllo granulare, permettendo agli amministratori d
 
 ---
 
-### Prerequisiti ✅
+### Prerequisiti
 
 Prima di iniziare, assicurati di avere i seguenti requisiti:
 
@@ -33,7 +30,7 @@ Prima di iniziare, assicurati di avere i seguenti requisiti:
 
 ---
 
-### Procedura Passo-Passo ⚙️
+### Procedura Passo-Passo
 
 Segui questi passaggi dettagliati per configurare e pubblicare le tue etichette di sensibilità.
 
@@ -42,6 +39,7 @@ Segui questi passaggi dettagliati per configurare e pubblicare le tue etichette 
 Per prima cosa, verifica che la funzionalità sia attiva nel tuo tenant.
 
 * Accedere al **Microsoft Purview Compliance Portal** → **Information Protection** → **Labels**.
+![Purview Portal](/images/governance/label-portal.png)
 * Verificare che la funzionalità sia attiva per **Teams, Groups e Sites**.
     * *Nota:* Se non lo è, potresti dover seguire la [guida ufficiale Microsoft](https://learn.microsoft.com/en-us/microsoft-365/compliance/enable-sensitivity-labels-for-containers?view=o365-worldwide) per abilitarla via PowerShell.
 
@@ -56,6 +54,8 @@ Ora creeremo l'etichetta che imporrà la privacy.
     * **External access**: Disabilitare se necessario (es. blocco utenti guest).
 * Salvare la label con un nome chiaro e descrittivo (es. `Private Only` o `Team Interno Riservato`).
 
+![creation](/images/posts/governance/create-label.png)
+
 #### 3. Creare e pubblicare una Label Policy
 
 Una volta creata l'etichetta, è necessario pubblicarla tramite una policy per renderla disponibile agli utenti.
@@ -69,7 +69,7 @@ Una volta creata l'etichetta, è necessario pubblicarla tramite una policy per r
     * **Tutti gli utenti** o un **Distribution List (DL)** contenente gli utenti a cui vuoi applicare questa limitazione.
 * Pubblicare la policy.
 
-#### 4. Propagazione e Verifica 🕒
+#### 4. Propagazione e Verifica
 
 Le modifiche non sono immediate.
 
@@ -79,9 +79,11 @@ Le modifiche non sono immediate.
     * L’opzione per creare un Team **pubblico sarà disabilitata (grigia)**.
     * **Non sarà possibile modificare la label o selezionare “None”** (se la policy è configurata correttamente con l'etichetta mandatoria).
 
+![Label Appicata](/images/posts/block-public-teams.png)
+
 ---
 
-### Punti Critici e Suggerimenti 💡
+### Punti Critici e Suggerimenti
 
 * **Rimuovere l’opzione “None”**: Per assicurarti che gli utenti non possano bypassare la policy, verifica che l'etichetta sia impostata come obbligatoria nella policy e che quest'ultima abbia la priorità più alta, se ci sono altre policy attive.
 * **Licensing**: Alcune funzionalità avanzate delle Sensitivity Labels (come la protezione dei contenuti crittografati o specifiche integrazioni) potrebbero richiedere licenze più avanzate (es. Microsoft 365 E5, Teams Premium, o add-on di conformità).
@@ -89,7 +91,7 @@ Le modifiche non sono immediate.
 
 ---
 
-### Benefici 🚀
+### Benefici
 
 L'implementazione delle Sensitivity Labels per la creazione di team pubblici offre numerosi vantaggi:
 
