@@ -1,5 +1,6 @@
 ---
 title: "Chi sono"
+draft: false
 ---
 
 Sono Davide Bianchi, un professionista dell’IT specializzato nella gestione e nella sicurezza degli ambienti **Microsoft 365 e Azure**.  
