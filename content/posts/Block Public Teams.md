@@ -39,7 +39,7 @@ Segui questi passaggi dettagliati per configurare e pubblicare le tue etichette 
 Per prima cosa, verifica che la funzionalità sia attiva nel tuo tenant.
 
 * Accedere al **Microsoft Purview Compliance Portal** → **Information Protection** → **Labels**.
-![Purview Portal](/images/governance/label-portal.png)
+![Purview Portal](/images/posts/governance/label-portal.png)
 * Verificare che la funzionalità sia attiva per **Teams, Groups e Sites**.
     * *Nota:* Se non lo è, potresti dover seguire la [guida ufficiale Microsoft](https://learn.microsoft.com/en-us/microsoft-365/compliance/enable-sensitivity-labels-for-containers?view=o365-worldwide) per abilitarla via PowerShell.
 
@@ -79,7 +79,7 @@ Le modifiche non sono immediate.
     * L’opzione per creare un Team **pubblico sarà disabilitata (grigia)**.
     * **Non sarà possibile modificare la label o selezionare “None”** (se la policy è configurata correttamente con l'etichetta mandatoria).
 
-![Label Appicata](/images/posts/block-public-teams.png)
+![Label Appicata](/images/posts/governance/block-public-teams.png)
 
 ---
 
