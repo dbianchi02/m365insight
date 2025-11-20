@@ -262,8 +262,8 @@
     max-width: var(--content-width); 
     
     /* 3. Padding per evitare che il contenuto tocchi i bordi laterali su mobile */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Regola specifica per lo spazio verticale tra il benvenuto e la griglia */
@@ -293,6 +293,8 @@
     font-size: 1rem;
     line-height: 1.6;
     max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto;
     opacity: 0.95;
     margin-bottom: 0;
 }
