@@ -1,12 +1,9 @@
 ---
-title: "Configurare l’auto-rilevamento della posizione di lavoro in Microsoft Teams tramite rete Wi-Fi"
+title: "Configurare l’auto-rilevamento della posizione di lavoro in Microsoft Teams"
 date: 2025-11-21T17:30:00+01:00
 draft: false
 tags: ["Governance", "Microsoft Teams", "Microsoft Places", "PowerShell"]
 description: "Scopri come automatizzare la rilevazione della presenza in ufficio in Teams utilizzando SSID e BSSID della rete Wi-Fi aziendale, ottimizzando la gestione degli spazi."
-cover:
-    image: "wifi-location-detection-hero.png" 
-    alt: "Icona Wi-Fi e Pin di localizzazione che simboleggiano il rilevamento della posizione"
 ---
 
 ## Introduzione: Gestire l'Ufficio Ibrido con Microsoft Places
@@ -15,6 +12,7 @@ In scenari di lavoro ibrido, sapere chi è in ufficio e dove si trova è diventa
 
 In questo articolo vedremo cos’è questo meccanismo, quali prerequisiti sono necessari e la procedura dettagliata in PowerShell per configurare il rilevamento tramite SSID e BSSID.
 
+![WorkLocationPlace](/workspaces/m365insight/static/images/posts/governance/work-location.png)
 ---
 
 ### Cos’è il Rilevamento via Wi-Fi?
@@ -52,13 +50,18 @@ Per iniziare, sono richiesti i seguenti ruoli e configurazioni:
 
 #### 1. Abilitare la Policy di Rilevamento in Teams
 
-Per prima cosa, crea la policy di rilevamento e assegnatela agli utenti target:
+Situazione iniziale in Teams prima di applicare la procedura:
+![Before](/workspaces/m365insight/static/images/posts/governance/before-work-location.png)
+
+Per prima cosa, crea la policy di rilevamento:
 
 ```powershell
 # Creazione della Policy di Rilevamento della Posizione
 New-CsTeamsWorkLocationDetectionPolicy -Identity wld-enabled -EnableWorkLocationDetection $true
 ```
-# Assegnazione della Policy all'utente (o a un gruppo/DL)
+
+Abilita la policy di rilevamento per un utente specifico/gruppo o globalmente:
+
 ```powershell
 # Scegliere se abilitare la policy per specifici utenti o distribuirla globalmente
 Grant-CsTeamsWorkLocationDetectionPolicy -PolicyName wld-enabled -Identity utente@dominio.com
@@ -106,6 +109,8 @@ _Suggerimento_: Se configuri solo SSID → posizione generica “In ufficio”. 
 
 Dopo l’abilitazione, Teams chiederà all'utente il consenso.
 La posizione si aggiorna automaticamente durante le working hours impostate in Outlook.
+L'utente potrà sempre modificare l'opzione di condivisione della posizione accedendo a Teams -> Impostazioni -> Privacy
+![After](/workspaces/m365insight/static/images/posts/governance/after-work-location.png)
 
 ---
 
