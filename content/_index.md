@@ -18,9 +18,3 @@ Questo sito raccoglie guide tecniche, procedure operative, automazioni e best pr
 ⚙️ **Automazione IT**  
 🗂️ **Governance**  
 
----
-
-## 📰 Ultimi Articoli
-
-Benvenuto nella sezione dedicata alle ultime pubblicazioni.  
-Puoi esplorare tutte le guide tecniche nella sezione **Articoli** o usare la barra di ricerca integrata nel sito.

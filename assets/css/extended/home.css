@@ -176,7 +176,6 @@
     line-height: 1.6;
     margin-bottom: 2rem; 
     opacity: 0.9;
-    max-width: 900px;
 }
 
 /* Container della griglia - Aumenta lo spazio sotto le card */
@@ -288,7 +287,6 @@
 .db-intro-text {
     font-size: 1rem;
     line-height: 1.6;
-    max-width: 800px;
     opacity: 0.95;
     margin-bottom: 0;
 }
