@@ -95,7 +95,7 @@ Add-WifiDevices -Action MapBuildings -InputFilePath mapping.csv
 Carica le entry dei BSSID associandole agli edifici in Places.
 
 ```powershell
-Add-WifiDevices -Action MapBuildings -InputFilePath mapping.csv
+Add-WifiDevices -Action UploadEntries -InputFilePath bssid.csv -BuildingMappingFile mapping.csv
 ```
 
 _Suggerimento_: Se configuri solo SSID → posizione generica “In ufficio”. Se aggiungi BSSID → posizione dettagliata per edificio.
@@ -105,7 +105,6 @@ _Suggerimento_: Se configuri solo SSID → posizione generica “In ufficio”. 
 ### Esperienza Utente
 
 Dopo l’abilitazione, Teams chiederà all'utente il consenso.
-
 La posizione si aggiorna automaticamente durante le working hours impostate in Outlook.
 
 ---

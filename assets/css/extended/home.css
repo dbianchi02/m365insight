@@ -260,10 +260,6 @@
     
     /* 2. Limita la larghezza massima per allinearsi al contenuto del tema */
     max-width: var(--content-width); 
-    
-    /* 3. Padding per evitare che il contenuto tocchi i bordi laterali su mobile */
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 /* Regola specifica per lo spazio verticale tra il benvenuto e la griglia */

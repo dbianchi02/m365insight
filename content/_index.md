@@ -3,7 +3,7 @@ title: "M365 Insight"
 description: "Guide tecniche, automazioni e best practice su Microsoft 365 e Azure"
 ---
 
-# 👋 Benvenuto su **M365 Insight**
+# Benvenuto su **M365 Insight** 👋 
 
 ### Tecnologie Microsoft 365 · Sicurezza · Automazione · Azure
 
