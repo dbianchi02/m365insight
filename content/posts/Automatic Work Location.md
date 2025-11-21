@@ -12,7 +12,7 @@ In scenari di lavoro ibrido, sapere chi è in ufficio e dove si trova è diventa
 
 In questo articolo vedremo cos’è questo meccanismo, quali prerequisiti sono necessari e la procedura dettagliata in PowerShell per configurare il rilevamento tramite SSID e BSSID.
 
-![WorkLocationPlace](/workspaces/m365insight/static/images/posts/governance/work-location.png)
+![WorkLocationPlace](/images/posts/governance/work-location.png)
 ---
 
 ### Cos’è il Rilevamento via Wi-Fi?
@@ -51,7 +51,7 @@ Per iniziare, sono richiesti i seguenti ruoli e configurazioni:
 #### 1. Abilitare la Policy di Rilevamento in Teams
 
 Situazione iniziale in Teams prima di applicare la procedura:
-![Before](/workspaces/m365insight/static/images/posts/governance/before-work-location.png)
+![Before](/images/posts/governance/before-work-location.png)
 
 Per prima cosa, crea la policy di rilevamento:
 
@@ -110,7 +110,7 @@ _Suggerimento_: Se configuri solo SSID → posizione generica “In ufficio”. 
 Dopo l’abilitazione, Teams chiederà all'utente il consenso.
 La posizione si aggiorna automaticamente durante le working hours impostate in Outlook.
 L'utente potrà sempre modificare l'opzione di condivisione della posizione accedendo a Teams -> Impostazioni -> Privacy
-![After](/workspaces/m365insight/static/images/posts/governance/after-work-location.png)
+![After](/images/posts/governance/after-work-location.png)
 
 ---
 
