@@ -9,7 +9,6 @@ Dal 2021 ho deciso di trasformare questa passione in professione, completando un
 
 Oggi lavoro quotidianamente su progetti Microsoft 365 in contesti enterprise, con particolare attenzione a governance, sicurezza, identità e automazione.
 
----
 
 # Cosa faccio
 
@@ -42,13 +41,9 @@ Mi occupo di:
 - Troubleshooting e supporto di secondo livello
 - Migrazioni e integrazioni con ambienti cloud
 
----
-
 # Certificazioni
 - **SC-300 — Microsoft Identity & Access Administrator**
 - **Copilot Technical Champions**
-
----
 
 # Perché ho creato questo sito
 

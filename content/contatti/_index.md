@@ -15,6 +15,4 @@ Dove pubblico progetti e script:
 ## 📧 Email
 Per evitare spam non pubblico l’email direttamente, ma puoi scrivermi tramite LinkedIn e ti rispondo subito.
 
----
-
 Grazie per aver visitato **M365 Insight**.
