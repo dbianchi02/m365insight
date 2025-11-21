@@ -1,216 +1,218 @@
 {{- define "main" -}}
 
-  {{- if .IsHome -}}
-    {{- /* === HOME PAGE CON PROFILE MODE + LAYOUT PERSONALIZZATO === */ -}}
+  {{- if .IsHome -}}
+    {{- /* === HOME PAGE CON PROFILE MODE + LAYOUT PERSONALIZZATO === */ -}}
 
-    {{- if site.Params.profileMode.enabled -}}
-      {{- partial "index_profile.html" . -}}
-    {{- end -}}
+    {{- if site.Params.profileMode.enabled -}}
+      {{- partial "index_profile.html" . -}}
+    {{- end -}}
 
-    {{- /* 1. SEZIONE: TESTO DI BENVENUTO E INTRODUZIONE */ -}}
-    {{- partial "home/welcome.html" . -}}
+    {{- /* 1. SEZIONE: TESTO DI BENVENUTO E INTRODUZIONE */ -}}
+    {{- partial "home/welcome.html" . -}}
 
-    {{- /* 2. SEZIONE: Griglia Latest Posts + Novità 2025 */ -}}
-    <section class="db-home-grid db-fade-in-slow">
-      <div class="db-card db-latest-posts">
-        <h2 class="db-section-title">Latest posts</h2>
-        <p class="db-section-subtitle">
-          Le ultime novità su Microsoft 365, Azure e automazione.
-        </p>
+    {{- /* 2. SEZIONE: Griglia Latest Posts + Novità 2025 */ -}}
+    <section class="db-home-grid db-fade-in-slow">
+      <div class="db-card db-latest-posts">
+        <h2 class="db-section-title">Latest posts</h2>
+        <p class="db-section-subtitle">
+          Le ultime novità su Microsoft 365, Azure e automazione.
+        </p>
 
-        {{- $latest := first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
-        <ul class="db-latest-list">
-          {{- range $latest -}}
-          <li class="db-latest-item">
-            <a href="{{ .RelPermalink }}" class="db-latest-link">
-              {{ .Title }}
-            </a>
-            <span class="db-latest-meta">
-              {{ .Date.Format "02/01/2006" }}
-            </span>
-          </li>
-          {{- end -}}
-        </ul>
+        {{- $latest := first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+        <ul class="db-latest-list">
+          {{- range $latest -}}
+          <li class="db-latest-item">
+            <a href="{{ .RelPermalink }}" class="db-latest-link">
+              {{ .Title }}
+            </a>
+            <span class="db-latest-meta">
+              {{ .Date.Format "02/01/2006" }}
+            </span>
+          </li>
+          {{- end -}}
+        </ul>
 
-        <a class="db-cta" href="/posts/">
-          Vedi tutti gli articoli
-        </a>
-      </div>
+        <a class="db-cta" href="/posts/">
+          Vedi tutti gli articoli
+        </a>
+      </div>
 
-      <div class="db-card db-novita">
-        <h2 class="db-section-title">Novità 2025</h2>
-        <p class="db-section-subtitle">
-          Aggiornamenti su script PowerShell, governance M365 e progetti reali.
-        </p>
-        <ul class="db-novita-list">
-          <li>Playbook di governance per Teams &amp; SharePoint</li>
-          <li>Script di automazione per Microsoft 365 e Azure</li>
-          <li>Linee guida su sicurezza, accessi e audit</li>
-        </ul>
-      </div>
-    </section>
+      <div class="db-card db-novita">
+        <h2 class="db-section-title">Novità 2025</h2>
+        <p class="db-section-subtitle">
+          Aggiornamenti su script PowerShell, governance M365 e progetti reali.
+        </p>
+        <ul class="db-novita-list">
+          <li>Playbook di governance per Teams &amp; SharePoint</li>
+          <li>Script di automazione per Microsoft 365 e Azure</li>
+          <li>Linee guida su sicurezza, accessi e audit</li>
+        </ul>
+      </div>
+    </section>
 
-    {{- /* 3. SEZIONE: AREE DI COMPETENZA (Le tue carte tematiche) */ -}}
-    {{- partial "thematic_cards.html" . -}}
+    {{- /* 3. SEZIONE: AREE DI COMPETENZA (Le tue carte tematiche) */ -}}
+    {{- partial "thematic_cards.html" . -}}
 
-    {{- /* 4. SEZIONE: Lista articoli standard (Paginata) */ -}}
-    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
-    {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" -}}
-    {{- $paginator := .Paginate $pages -}}
-    {{- $term := .Data.Term -}}
+    {{- /* 4. SEZIONE: Lista articoli standard (Paginata) */ -}}
+    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+    {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" -}}
+    {{- $paginator := .Paginate $pages -}}
+    {{- $term := .Data.Term -}}
 
-    <section class="db-home-list">
-      {{- range $index, $page := $paginator.Pages -}}
+    <section class="db-home-list">
+      {{- range $index, $page := $paginator.Pages -}}
 
-      {{- $class := "post-entry" -}}
-      {{- if $term -}}
-        {{- $class = "post-entry tag-entry" -}}
-      {{- end -}}
+      {{- $class := "post-entry" -}}
+      {{- if $term -}}
+        {{- $class = "post-entry tag-entry" -}}
+      {{- end -}}
 
-      <article class="{{ $class }}">
-        {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) -}}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) -}}
-        <header class="entry-header">
-          <h2>
-            {{- .Title -}}
-            {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
-          </h2>
-        </header>
-        {{- if (ne (.Param "hideSummary") true) -}}
+      <article class="{{ $class }}">
+        {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) -}}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) -}}
+        <header class="entry-header">
+          <h2>
+            {{- .Title -}}
+            {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
+          </h2>
+        </header>
+        {{- if (ne (.Param "hideSummary") true) -}}
+        <div class="entry-content">
+          <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        </div>
+        {{- end -}}
+        {{- if not (.Param "hideMeta") -}}
+        <footer class="entry-footer">
+          {{- partial "post_meta.html" . -}}
+        </footer>
+        {{- end -}}
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </article>
+      {{- end -}}
+    </section>
+
+    {{- if gt $paginator.TotalPages 1 -}}
+    <footer class="page-footer">
+      <nav class="pagination">
+        {{- if $paginator.HasPrev -}}
+        <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+          «&nbsp;{{ i18n "prev_page" }}&nbsp;
+          {{- if (.Param "ShowPageNums") -}}
+          {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages -}}
+          {{- end -}}
+        </a>
+        {{- end -}}
+        {{- if $paginator.HasNext -}}
+        <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+          {{- i18n "next_page" }}&nbsp;
+          {{- if (.Param "ShowPageNums") -}}
+          {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages -}}
+          {{- end -}}&nbsp;»
+        </a>
+        {{- end -}}
+      </nav>
+    </footer>
+    {{- end -}}
+
+  {{- else -}}
+    {{- /* === SEZIONI / TAXONOMY / LISTE NON HOME (COME ABOUT E CONTATTI) === */ -}}
+
+    {{- if not .IsHome | and .Title -}}
+    <header class="page-header">
+      {{- partial "breadcrumbs.html" . -}}
+      <h1>
+        {{ .Title }}
+        {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") -}}
+        {{- with .OutputFormats.Get "rss" -}}
+        <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" height="23">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
+          </svg>
+        </a>
+        {{- end -}}
+        {{- end -}}
+      </h1>
+      {{- if .Description -}}
+      <div class="post-description">
+        {{ .Description | markdownify }}
+      </div>
+      {{- end -}}
+    </header>
+    {{- end -}}
+
+    {{- if and (not .IsHome) (eq .Kind "section") -}}
+        {{- if .Content -}}
         <div class="entry-content">
-          <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+            <p style="color:red; font-size: 20px;">[TEST FORZATO]</p>
+            {{ .Content }}
         </div>
         {{- end -}}
-        {{- if not (.Param "hideMeta") -}}
-        <footer class="entry-footer">
-          {{- partial "post_meta.html" . -}}
-        </footer>
-        {{- end -}}
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-      </article>
-      {{- end -}}
-    </section>
-
-    {{- if gt $paginator.TotalPages 1 -}}
-    <footer class="page-footer">
-      <nav class="pagination">
-        {{- if $paginator.HasPrev -}}
-        <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-          «&nbsp;{{ i18n "prev_page" }}&nbsp;
-          {{- if (.Param "ShowPageNums") -}}
-          {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages -}}
-          {{- end -}}
-        </a>
-        {{- end -}}
-        {{- if $paginator.HasNext -}}
-        <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-          {{- i18n "next_page" }}&nbsp;
-          {{- if (.Param "ShowPageNums") -}}
-          {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages -}}
-          {{- end -}}&nbsp;»
-        </a>
-        {{- end -}}
-      </nav>
-    </footer>
     {{- end -}}
+    
+    {{- $pages := union .RegularPages .Sections -}}
+    {{- $paginator := .Paginate $pages -}}
+    {{- $term := .Data.Term -}}
 
-{{- else -}}
-  {{- /* === SEZIONI / TAXONOMY / LISTE NON HOME (COME ABOUT E CONTATTI) === */ -}}
+    {{- range $index, $page := $paginator.Pages -}}
 
-  {{- if not .IsHome | and .Title -}}
-  <header class="page-header">
-    {{- partial "breadcrumbs.html" . -}}
-    <h1>
-      {{ .Title }}
-      {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") -}}
-      {{- with .OutputFormats.Get "rss" -}}
-      <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" height="23">
-          <path d="M4 11a9 9 0 0 1 9 9" />
-          <path d="M4 4a16 16 0 0 1 16 16" />
-          <circle cx="5" cy="19" r="1" />
-        </svg>
-      </a>
-      {{- end -}}
-      {{- end -}}
-    </h1>
-    {{- if .Description -}}
-    <div class="post-description">
-      {{ .Description | markdownify }}
-    </div>
-    {{- end -}}
-  </header>
-  {{- end -}}
+      {{- $class := "post-entry" -}}
 
-  {{- if and (not .IsHome) (eq .Kind "section") -}}
-    {{- if .Content -}}
-    <div class="entry-content">
-      <p style="color:red; font-size: 20px;">[TEST FORZATO]</p>
-      {{ .Content }}
-    </div>
-    {{- end -}}
-  {{- end -}}
+      {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams -}}
+      {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) -}}
+        {{- $class = "first-entry" -}}
+      {{- else if $term -}}
+        {{- $class = "post-entry tag-entry" -}}
+      {{- end -}}
 
-  {{- $pages := union .RegularPages .Sections -}}
-  {{- $paginator := .Paginate $pages -}}
-  {{- $term := .Data.Term -}}
+      <article class="{{ $class }}">
+        {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) -}}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) -}}
+        <header class="entry-header">
+          <h2>
+            {{- .Title -}}
+            {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
+          </h2>
+        </header>
+        {{- if (ne (.Param "hideSummary") true) -}}
+        <div class="entry-content">
+          <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        </div>
+        {{- end -}}
+        {{- if not (.Param "hideMeta") -}}
+        <footer class="entry-footer">
+          {{- partial "post_meta.html" . -}}
+        </footer>
+        {{- end -}}
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </article>
+    {{- end -}}
 
-  {{- range $index, $page := $paginator.Pages -}}
+    {{- if gt $paginator.TotalPages 1 -}}
+    <footer class="page-footer">
+      <nav class="pagination">
+        {{- if $paginator.HasPrev -}}
+        <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+          «&nbsp;{{ i18n "prev_page" }}&nbsp;
+          {{- if (.Param "ShowPageNums") -}}
+          {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages -}}
+          {{- end -}}
+        </a>
+        {{- end -}}
+        {{- if $paginator.HasNext -}}
+        <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+          {{- i18n "next_page" }}&nbsp;
+          {{- if (.Param "ShowPageNums") -}}
+          {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages -}}
+          {{- end -}}&nbsp;»
+        </a>
+        {{- end -}}
+      </nav>
+    </footer>
+    {{- end -}}
 
-    {{- $class := "post-entry" -}}
-
-    {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams -}}
-    {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) -}}
-      {{- $class = "first-entry" -}}
-    {{- else if $term -}}
-      {{- $class = "post-entry tag-entry" -}}
-    {{- end -}}
-
-    <article class="{{ $class }}">
-      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) -}}
-      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) -}}
-      <header class="entry-header">
-        <h2>
-          {{- .Title -}}
-          {{- if .Draft -}}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end -}}
-        </h2>
-      </header>
-      {{- if (ne (.Param "hideSummary") true) -}}
-      <div class="entry-content">
-        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-      </div>
-      {{- end -}}
-      {{- if not (.Param "hideMeta") -}}
-      <footer class="entry-footer">
-        {{- partial "post_meta.html" . -}}
-      </footer>
-      {{- end -}}
-      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </article>
-  {{- end -}}
-
-  {{- if gt $paginator.TotalPages 1 -}}
-  <footer class="page-footer">
-    <nav class="pagination">
-      {{- if $paginator.HasPrev -}}
-      <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-        «&nbsp;{{ i18n "prev_page" }}&nbsp;
-        {{- if (.Param "ShowPageNums") -}}
-        {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages -}}
-        {{- end -}}
-      </a>
-      {{- end -}}
-      {{- if $paginator.HasNext -}}
-      <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-        {{- i18n "next_page" }}&nbsp;
-        {{- if (.Param "ShowPageNums") -}}
-        {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages -}}
-        {{- end -}}&nbsp;»
-      </a>
-      {{- end -}}
-    </nav>
-  </footer>
-  {{- end -}}
+  {{- end -}}
 
 {{- end -}}
