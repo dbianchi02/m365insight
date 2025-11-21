@@ -2,13 +2,13 @@
 title: "Blocco della creazione di gruppi pubblici in Microsoft Teams tramite Sensitivity Labels"
 date: 2025-11-20T10:00:00+02:00
 draft: false
-tags: ["Microsoft Teams", "Sensitivity Labels", "Governance", "Sicurezza M365", "Microsoft Purview"]
+tags: ["Governance", "Microsoft Teams", "Sensitivity Labels", "Sicurezza M365", "Microsoft Purview"]
 description: "Scopri come impedire la creazione di team pubblici in Microsoft Teams utilizzando le Sensitivity Labels di Microsoft Purview, garantendo maggiore controllo e sicurezza."
 ---
 
 ## Introduzione
 
-In un ambiente di lavoro moderno e collaborativo come Microsoft Teams, la facilità di creazione di nuovi spazi può portare a sfide di governance e sicurezza. Uno dei rischi maggiori è la proliferazione incontrollata di team pubblici, che potrebbero esporre dati sensibili o creare confusione organizzativa. Questo articolo ti guiderà attraverso una soluzione efficace: l'utilizzo delle **Sensitivity Labels (etichette di sensibilità)** di Microsoft Purview Information Protection per imporre la privacy dei gruppi fin dalla loro creazione.
+in un ambiente di lavoro moderno e collaborativo come Microsoft Teams, la facilità di creazione di nuovi spazi può portare a sfide di governance e sicurezza. Uno dei rischi maggiori è la proliferazione incontrollata di team pubblici, che potrebbero esporre dati sensibili o creare confusione organizzativa. Questo articolo ti guiderà attraverso una soluzione efficace: l'utilizzo delle **Sensitivity Labels (etichette di sensibilità)** di Microsoft Purview Information Protection per imporre la privacy dei gruppi fin dalla loro creazione.
 
 ---
 
