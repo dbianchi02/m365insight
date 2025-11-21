@@ -144,11 +144,12 @@
     {{- end -}}
 
     {{- if and (not .IsHome) (eq .Kind "section") (not .Paginator) -}}
-      {{- if .Content -}}
-      <div class="entry-content">
-          {{ .Content }}
-      </div>
-      {{- end -}}
+        {{- if .Content -}}
+        <div class="entry-content">
+            **<p style="color:red; font-size: 20px;">[TEST FUNZIONANTE - IL LAYOUT E' OK]</p>**
+            {{ .Content }}
+        </div>
+        {{- end -}}
     {{- end -}}
 
     {{- $pages := union .RegularPages .Sections -}}
