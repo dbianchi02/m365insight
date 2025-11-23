@@ -51,19 +51,19 @@ menu:
       weight: 1
 
     - identifier: posts
-      name: Articoli
+      name: News & Posts
       url: /posts/
       weight: 2
 
     # Allineato alla cartella content/about/
     - identifier: about
-      name: Chi sono
+      name: About Me
       url: /about/
       weight: 4
 
     # Allineato alla cartella content/contatti/
     - identifier: contact
-      name: Contattami
+      name: Contact Me
       url: /contatti/
       weight: 5
 
