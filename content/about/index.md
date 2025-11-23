@@ -4,7 +4,7 @@ draft: false
 ShowToc: false
 ---
 
-# 👤 Chi sono: Davide Bianchi
+# 👤 Davide Bianchi
 
 Sono un **professionista IT** specializzato nella gestione e nella sicurezza degli ambienti **Microsoft 365 e Azure**.
 
