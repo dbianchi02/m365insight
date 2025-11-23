@@ -51,7 +51,7 @@ menu:
       weight: 1
 
     - identifier: posts
-      name: News & Posts
+      name: News & Post
       url: /posts/
       weight: 2
 
