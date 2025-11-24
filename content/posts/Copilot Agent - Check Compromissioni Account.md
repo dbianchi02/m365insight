@@ -58,7 +58,7 @@ Durante la creazione dell'agente personalizzato, definisci con precisione le sue
 | **Nome Agente** | M365 – Compromissioni IT Sec |
 | **Descrizione** | Analizza i log di accesso Microsoft Entra ID per individuare anomalie e possibili compromissioni, fornendo una risposta tecnica pronta per effettuare una remediation. |
 
-#### 📝 Istruzioni Principali (Prompt di Sistema)
+#### Istruzioni Principali (Prompt di Sistema)
 
 * Analizza i file CSV dei sign-in logs Microsoft Entra ID.
 * Identifica i pattern di accesso abituali (location, device, browser).
@@ -76,7 +76,7 @@ Durante la creazione dell'agente personalizzato, definisci con precisione le sue
 ![CopilotStudio](/images/posts/security/build-agent.png)
 ---
 
-## 💬 Prompt Suggeriti per Risposte Efficaci
+## Prompt Suggeriti per Risposte Efficaci
 
 Una volta che l'agente è pronto, l'efficacia della risposta dipende dalla chiarezza del prompt utente.
 
