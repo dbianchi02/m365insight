@@ -1,9 +1,9 @@
 ---
-title: "Configurare l’auto-rilevamento della posizione di lavoro in Microsoft Teams"
+title: "Come analizzare i log di Microsoft Entra ID per individuare compromissioni account"
 date: 2025-11-24T15:00:00+01:00
 draft: false
-tags: ["Governance", "Microsoft 365 Copilot", "Copilot Studio", "Entra ID"]
-description: "Scopri come automatizzare la rilevazione della presenza in ufficio in Teams utilizzando SSID e BSSID della rete Wi-Fi aziendale, ottimizzando la gestione degli spazi."
+tags: ["identità-sicurezza", "Microsoft 365 Copilot", "Copilot Studio", "Entra ID"]
+description: "Scopri come configurare l'agente in Microsoft 365 Copilot per automatizzare l'analisi dei log di Entra ID, individuare accessi anomali e generare risposte strutturate per l'Incident Response."
 ---
 
 # 🛡️ Come Analizzare i Log di Microsoft Entra ID per Individuare Compromissioni: Guida all'Agente Copilot 
@@ -12,7 +12,7 @@ description: "Scopri come automatizzare la rilevazione della presenza in ufficio
 
 La **sicurezza degli account aziendali** è una priorità assoluta. Gli accessi anomali, provenienti da location insolite o dispositivi non autorizzati, possono essere indicatori cruciali di una compromissione. In questo articolo, vedremo come configurare un'agente Copilot personalizzato **M365 – Compromissioni IT Sec** per analizzare i log di Microsoft Entra ID (precedentemente Azure AD) e generare risposte tecniche strutturate, pronte per i team di sicurezza.
 
-![CopilotAgent](/images/posts/security/agente Copilot.png)
+![CopilotAgent](/images/posts/security/agente-copilot.png)
 
 ---
 
@@ -46,7 +46,7 @@ L'agente lavora analizzando i dati grezzi dei log. Prepara i seguenti elementi:
     * Vai su **Microsoft Entra ID** → **Monitoring & health** → **Sign-in logs**.
     * Seleziona il periodo di interesse (es. ultimi 7 giorni) e clicca su **Download CSV**.
 * **Documentazione Ufficiale Microsoft (per contesto):**
-    * [Sign-in Logs Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/sign-ins)
+    * [Sign-in Logs Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins)
     * [Conditional Access Policy](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview)
 
 ### 2. Creazione dell'Agente in Copilot Studio
@@ -73,7 +73,7 @@ Durante la creazione dell'agente personalizzato, definisci con precisione le sue
 * Utilizza **tabelle** e **bullet point** per massima chiarezza e leggibilità.
 * Se mancano dati chiave per l'analisi (es. il campo IP è vuoto), segnala la limitazione all'utente.
 
-![CopilotStudio](/images/posts/security/build agent.png)
+![CopilotStudio](/images/posts/security/build-agent.png)
 ---
 
 ## 💬 Prompt Suggeriti per Risposte Efficaci
@@ -99,7 +99,7 @@ Questo prompt combina tutti gli elementi necessari per un'analisi forense prelim
 
 ---
 
-## 🎯 Best Practice per Risposte Corrette
+## Best Practice per Risposte Corrette
 
 Per assicurare che l'agente fornisca i risultati più accurati e utili:
 
