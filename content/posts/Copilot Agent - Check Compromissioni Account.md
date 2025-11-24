@@ -86,8 +86,6 @@ Una volta che l'agente è pronto, l'efficacia della risposta dipende dalla chiar
 | **Prompt 2 – Focus su IP e MFA** | Analisi mirata su indicatori tecnici di attacco (VPN, proxy, tentativi MFA). |
 | **Prompt 3 – Report sintetico per manager** | Sintesi di alto livello per una panoramica rapida, con enfasi sul rischio e le raccomandazioni. |
 
-![Copilot Agent](/images/posts/security/agente Copilot.png)
-
 ### Il Prompt Perfetto per una Risposta Completa
 
 Questo prompt combina tutti gli elementi necessari per un'analisi forense preliminare:
