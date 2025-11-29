@@ -1,7 +1,7 @@
 ---
 title: "Monitoraggio di Microsoft 365 Copilot: Report dettagliati e dashboard aggregate"
 date: 2025-11-28T13:00:00+01:00
-draft: true
+draft: false
 tags: ["adoption-m365", "Microsoft 365 Copilot", "Monitoraggio"]
 description: "Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare adozione e governance."
 authors: ["Davide Bianchi"]
