@@ -3,7 +3,6 @@ title: "Monitoraggio di Microsoft 365 Copilot: Report dettagliati e dashboard ag
 date: 2025-11-29T13:00:00+01:00
 draft: true
 tags: ["adoption-m365", "Microsoft 365 Copilot", "Monitoraggio"]
-summary: "Come monitorare l'uso di Microsoft 365 Copilot tramite report dettagliati e dashboard aggregate."
 description: "Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare adozione e governance."
 authors: ["Davide Bianchi"]
 keywords: ["Copilot Usage Report","Copilot Dashboard","Microsoft 365 Governance"]
@@ -131,20 +130,3 @@ Creazione di report personalizzati: Insights Analyst consente di combinare metri
 ## Conclusione
 
 Il monitoraggio di Microsoft 365 Copilot è un pilastro della governance moderna. Combinando **report dettagliati** e **dashboard aggregate**, le aziende possono misurare l’adozione, garantire conformità e massimizzare il valore dell’investimento.
-
----
-
-### Meta
-
-**SEO title options:**  
-- Monitoraggio Microsoft 365 Copilot: guida completa  
-- Come analizzare l’uso di Copilot con report e dashboard  
-- Microsoft 365 Copilot: strumenti di governance e adozione  
-
-**Meta description:**  
-Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare governance e adozione.
-
-**Keywords:** Copilot Usage Report, Copilot Dashboard, Microsoft 365 Governance
-
-**Copertina – prompt immagine:**  
-“Interfaccia Microsoft 365 Admin Center con grafici di utilizzo Copilot, trend e KPI, stile moderno, colori blu e grigio”
