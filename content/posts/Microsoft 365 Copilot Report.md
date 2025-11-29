@@ -5,7 +5,6 @@ draft: true
 tags: ["adoption-m365", "Microsoft 365 Copilot", "Monitoraggio"]
 description: "Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare adozione e governance."
 authors: ["Davide Bianchi"]
-keywords: ["Copilot Usage Report","Copilot Dashboard","Microsoft 365 Governance"]
 ---
 
 ## Introduzione
