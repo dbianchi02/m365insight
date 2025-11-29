@@ -3,6 +3,7 @@ title: "Configurare l’auto-rilevamento della posizione di lavoro in Microsoft 
 date: 2025-11-21T17:30:00+01:00
 draft: false
 tags: ["Governance", "Microsoft Teams", "Microsoft Places", "PowerShell"]
+authors: ["Davide Bianchi"]
 description: "Scopri come automatizzare la rilevazione della presenza in ufficio in Teams utilizzando SSID e BSSID della rete Wi-Fi aziendale, ottimizzando la gestione degli spazi."
 ---
 

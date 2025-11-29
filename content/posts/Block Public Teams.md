@@ -3,6 +3,7 @@ title: "Blocco della creazione di gruppi pubblici in Microsoft Teams tramite Sen
 date: 2025-11-20T10:00:00+02:00
 draft: false
 tags: ["Governance", "Microsoft Teams", "Sensitivity Labels", "Sicurezza M365", "Microsoft Purview"]
+authors: ["Davide Bianchi"]
 description: "Scopri come impedire la creazione di team pubblici in Microsoft Teams utilizzando le Sensitivity Labels di Microsoft Purview, garantendo maggiore controllo e sicurezza."
 ---
 

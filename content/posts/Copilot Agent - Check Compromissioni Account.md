@@ -3,6 +3,7 @@ title: "Come analizzare i log di Microsoft Entra ID per individuare compromissio
 date: 2025-11-24T15:00:00+01:00
 draft: false
 tags: ["identità-sicurezza", "Microsoft 365 Copilot", "Copilot Studio", "Entra ID"]
+authors: ["Davide Bianchi"]
 description: "Scopri come configurare l'agente in Microsoft 365 Copilot per automatizzare l'analisi dei log di Entra ID, individuare accessi anomali e generare risposte strutturate per l'Incident Response."
 ---
 

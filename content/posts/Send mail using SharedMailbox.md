@@ -3,6 +3,7 @@ title: "Inviare una mail da una shared mailbox con Microsoft Graph (app-only)"
 date: 2025-11-22T10:00:00+02:00
 draft: false
 tags: ["automazione-it", "Microsoft Graph", "Exchange Online", "PowerShell"]
+authors: ["Davide Bianchi"]
 description: "Come configurare un’app in Entra ID e i permessi necessari per inviare email da una shared mailbox tramite Microsoft Graph in modalità app-only."
 ---
 
