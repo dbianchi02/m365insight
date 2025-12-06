@@ -296,70 +296,96 @@
   margin-top: 30px;
   margin-bottom: 40px;
   text-align: center;
-  background-color: transparent; /* ASSICURARSI CHE NON ABBIA SFONDO */
+  background-color: transparent; /* Assicuriamoci che non abbia sfondo */
 }
 
 /* Forma di Ricerca: Il "Guscio" Bianco */
 .search-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  /* CAMBIO CRUCIALE: Usiamo un colore chiaro come sfondo del campo, non --entry */
-  background-color: #ffffff; /* Bianco puro per l'effetto flottante */
-  
-  border-radius: 50px;
-  padding: 8px 20px; /* Ridotto leggermente il padding esterno */
-  width: 100%;
-  max-width: 650px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Colore bianco per l'effetto flottante */
+  background-color: #ffffff; /* Bianco puro per l'effetto flottante */
+  
+  border-radius: 50px;
+  padding: 8px 20px; /* Ridotto leggermente il padding esterno */
+  width: 100%;
+  max-width: 650px;
+  
   /* Ombra più pronunciata per l'effetto 3D */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  margin: 0 auto;
-  transition: box-shadow 180ms ease, background-color 180ms ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;
+  transition: box-shadow 180ms ease, background-color 180ms ease;
 }
 
 /* Hover sulla search-form */
 .search-form:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); /* Ombra più forte al passaggio del mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); /* Ombra più forte al passaggio del mouse */
 }
 
 .search-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  
-  /* DEVE ESSERE TRASPARENTE per mostrare lo sfondo bianco del form */
-  background-color: transparent; 
-  color: var(--primary); 
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  
+  /* Background leggero per farlo vedere bene */
+  background-color: #f2f2f2;  /* Aggiungiamo un colore di sfondo chiaro */
+  color: var(--primary);       /* Colore del testo */
+  border-radius: 50px;         /* Bordi arrotondati */
 }
-/* ... (altri stili come search-button, placeholder ecc. restano uguali) */
+
+/* Cambiamo il colore al focus per farlo risaltare */
+.search-input:focus {
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra al focus */
+  border-color: var(--primary); /* Colore del bordo al focus */
+}
+
+/* Placeholder */
+.search-input::placeholder {
+  color: var(--secondary);  /* Colore del placeholder */
+}
+
+/* Pulsante di ricerca */
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.search-button img {
+  width: 22px;
+  height: 22px;
+}
 
 /* =========================================================
-   Modalità scura: adattamenti per la barra di ricerca
+   Modalità scura: adattamenti per la barra di ricerca
 ========================================================= */
 @media (prefers-color-scheme: dark) {
-  /* Il contenitore non deve avere sfondo */
-  .search-container {
-    background-color: transparent;
-  }
+  /* Il contenitore non deve avere sfondo */
+  .search-container {
+    background-color: transparent;
+  }
   
-  /* CAMBIO CRUCIALE per Dark Mode */
-  .search-form {
-    /* Usa un colore scuro ma distinto (es. colore delle card/entry) */
-    background-color: var(--entry); 
-    
-    /* Ombra chiara, tipica dei temi scuri */
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); 
-  }
+  /* Dark mode per la search bar */
+  .search-form {
+    background-color: var(--entry);  /* Colore scuro per il campo di ricerca */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Ombra chiara */
+  }
 
-  .search-input {
-    background-color: transparent;
-    color: var(--primary);           /* Testo chiaro */
-  }
+  .search-input {
+    background-color: #444;  /* Sfondo scuro per la modalità scura */
+    color: var(--primary);    /* Testo chiaro */
+  }
 
-  /* ... (il resto del tuo codice per dark mode è corretto) */
+  .search-button img {
+    filter: invert(1); /* Inverti il colore dell'icona per la modalità scura */
+  }
 
+  .search-input:focus {
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra morbida al focus */
+  }
 }
