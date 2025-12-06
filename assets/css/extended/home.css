@@ -346,3 +346,33 @@
 .search-button:hover {
   opacity: 0.7; /* Effetto hover sul pulsante */
 }
+
+/* Per la modalità scura */
+@media (prefers-color-scheme: dark) {
+  .search-container {
+    background-color: #333; /* Colore di sfondo scuro */
+  }
+
+  .search-input {
+    background-color: #444; /* Sfondo scuro per il campo di input */
+    color: #fff; /* Testo chiaro */
+  }
+
+  .search-button svg {
+    stroke: #fff; /* Colore dell'icona chiaro */
+  }
+}
+
+/* Se usi data-theme (per la modalità scura personalizzata) */
+[data-theme="dark"] .search-container {
+  background-color: #333;
+}
+
+[data-theme="dark"] .search-input {
+  background-color: #444;
+  color: #fff;
+}
+
+[data-theme="dark"] .search-button svg {
+  stroke: #fff;
+}

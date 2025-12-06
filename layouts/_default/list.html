@@ -3,19 +3,23 @@
   {{- if .IsHome -}}
     {{- /* === HOME PAGE CON PROFILE MODE + LAYOUT PERSONALIZZATO === */ -}}
 
-    {{- if site.Params.profileMode.enabled -}}
-      {{- partial "index_profile.html" . -}}
-    {{- end -}}
-
-    {{- /* === Barra di ricerca (posizionata sotto il profilo) === */ -}}
+    {{- /* === Barra di ricerca (posizionata sopra il profilo) === */ -}}
     <div class="search-container">
       <form class="search-form" action="/search/" method="get">
         <input type="text" name="q" placeholder="Cerca articoli..." class="search-input" />
         <button type="submit" class="search-button">
-          <img src="/path/to/search-icon.svg" alt="Cerca" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10" cy="10" r="7" />
+            <line x1="16" y1="16" x2="22" y2="22" />
+          </svg>
         </button>
       </form>
     </div>
+
+    {{- if site.Params.profileMode.enabled -}}
+      {{- partial "index_profile.html" . -}}
+    {{- end -}}
 
     {{- /* 1. SEZIONE: TESTO DI BENVENUTO E INTRODUZIONE */ -}}
     {{- partial "home/welcome.html" . -}}
