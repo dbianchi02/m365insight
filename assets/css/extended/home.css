@@ -302,7 +302,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--entry); /* Colore di sfondo principale del tema */
+  background-color: var(--entry); /* Usa il colore di sfondo principale del tema */
   border-radius: 50px;  /* Bordi arrotondati */
   padding: 12px 20px;
   width: 100%;
@@ -312,6 +312,7 @@
   transition: box-shadow 180ms ease, background-color 180ms ease;
 }
 
+/* Hover sulla search-form */
 .search-form:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Ombra più forte al passaggio del mouse */
 }
@@ -331,7 +332,6 @@
   color: var(--secondary);  /* Colore del placeholder */
 }
 
-/* Pulsante di ricerca */
 .search-button {
   background-color: transparent;
   border: none;
@@ -347,7 +347,7 @@
 /* Effetto focus */
 .search-input:focus {
   border: 2px solid var(--primary);  /* Colore del bordo al focus */
-  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra più morbida al focus */
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra morbida al focus */
 }
 
 /* Hover sul pulsante */
@@ -374,6 +374,6 @@
 
   .search-input:focus {
     border-color: var(--primary);  /* Colore di focus per la modalità scura */
-    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra più morbida al focus */
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra morbida al focus */
   }
 }
