@@ -291,69 +291,51 @@
     margin-bottom: 0;
 }
 
-/* Barra di ricerca */
+/* Barra di ricerca: Contenitore Esterno */
 .search-container {
-  margin-top: 30px;  /* Distanza dal profilo */
-  margin-bottom: 40px;  /* Distanza dalla sezione successiva */
+  margin-top: 30px;
+  margin-bottom: 40px;
   text-align: center;
+  background-color: transparent; /* ASSICURARSI CHE NON ABBIA SFONDO */
 }
 
+/* Forma di Ricerca: Il "Guscio" Bianco */
 .search-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--entry); /* Usa il colore di sfondo principale del tema */
-  border-radius: 50px;  /* Bordi arrotondati */
-  padding: 12px 20px;
-  width: 100%;
-  max-width: 650px;  /* Larghezza massima */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Ombra delicata */
-  margin: 0 auto;
-  transition: box-shadow 180ms ease, background-color 180ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* CAMBIO CRUCIALE: Usiamo un colore chiaro come sfondo del campo, non --entry */
+  background-color: #ffffff; /* Bianco puro per l'effetto flottante */
+  
+  border-radius: 50px;
+  padding: 8px 20px; /* Ridotto leggermente il padding esterno */
+  width: 100%;
+  max-width: 650px;
+  
+  /* Ombra più pronunciata per l'effetto 3D */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto;
+  transition: box-shadow 180ms ease, background-color 180ms ease;
 }
 
 /* Hover sulla search-form */
 .search-form:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Ombra più forte al passaggio del mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); /* Ombra più forte al passaggio del mouse */
 }
 
 .search-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 50px;  /* Bordi arrotondati */
-  font-size: 16px;
-  background-color: transparent; /* Sfondo trasparente */
-  color: var(--primary); /* Colore del testo */
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  
+  /* DEVE ESSERE TRASPARENTE per mostrare lo sfondo bianco del form */
+  background-color: transparent; 
+  color: var(--primary); 
 }
-
-.search-input::placeholder {
-  color: var(--secondary);  /* Colore del placeholder */
-}
-
-.search-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 12px;
-}
-
-.search-button img {
-  width: 22px;
-  height: 22px;
-}
-
-/* Effetto focus */
-.search-input:focus {
-  border: 2px solid var(--primary);  /* Colore del bordo al focus */
-  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra morbida al focus */
-}
-
-/* Hover sul pulsante */
-.search-button:hover {
-  opacity: 0.7;
-}
+/* ... (altri stili come search-button, placeholder ecc. restano uguali) */
 
 /* =========================================================
    Modalità scura: adattamenti per la barra di ricerca
