@@ -72,3 +72,9 @@ resourceDir: "assets"
 imaging:
   quality: 75
   resampleFilter: Box
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

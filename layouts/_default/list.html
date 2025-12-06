@@ -7,6 +7,16 @@
       {{- partial "index_profile.html" . -}}
     {{- end -}}
 
+    {{- /* === Barra di ricerca (posizionata sotto il profilo) === */ -}}
+    <div class="search-container">
+      <form class="search-form" action="/search/" method="get">
+        <input type="text" name="q" placeholder="Cerca articoli..." class="search-input" />
+        <button type="submit" class="search-button">
+          <img src="/path/to/search-icon.svg" alt="Cerca" />
+        </button>
+      </form>
+    </div>
+
     {{- /* 1. SEZIONE: TESTO DI BENVENUTO E INTRODUZIONE */ -}}
     {{- partial "home/welcome.html" . -}}
 
