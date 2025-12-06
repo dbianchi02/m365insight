@@ -323,7 +323,7 @@
   padding: 10px 15px;
   border-radius: 50px;  /* Bordi arrotondati */
   font-size: 16px;
-  background-color: transparent; /* Rendi trasparente il background */
+  background-color: transparent; /* Sfondo trasparente */
   color: var(--primary); /* Colore del testo */
 }
 
@@ -347,8 +347,7 @@
 /* Effetto focus */
 .search-input:focus {
   border: 2px solid var(--primary);  /* Colore del bordo al focus */
-  box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu ma meno invasivo */
-  transition: box-shadow 150ms ease;
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra più morbida al focus */
 }
 
 /* Hover sul pulsante */
@@ -375,6 +374,6 @@
 
   .search-input:focus {
     border-color: var(--primary);  /* Colore di focus per la modalità scura */
-    box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu ma più delicato */
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra più morbida al focus */
   }
 }
