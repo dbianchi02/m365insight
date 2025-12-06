@@ -302,7 +302,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--entry); /* Usa il colore di sfondo principale del tema */
+  background-color: var(--entry); /* Colore di sfondo principale del tema */
   border-radius: 50px;  /* Bordi arrotondati */
   padding: 12px 20px;
   width: 100%;
@@ -323,12 +323,12 @@
   padding: 10px 15px;
   border-radius: 50px;  /* Bordi arrotondati */
   font-size: 16px;
-  background-color: transparent;
+  background-color: transparent; /* Rendi trasparente il background */
   color: var(--primary); /* Colore del testo */
 }
 
 .search-input::placeholder {
-  color: var(--secondary);  /* Colore del placeholder in base al tema */
+  color: var(--secondary);  /* Colore del placeholder */
 }
 
 /* Pulsante di ricerca */
@@ -347,7 +347,8 @@
 /* Effetto focus */
 .search-input:focus {
   border: 2px solid var(--primary);  /* Colore del bordo al focus */
-  box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu */
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu ma meno invasivo */
+  transition: box-shadow 150ms ease;
 }
 
 /* Hover sul pulsante */
@@ -364,7 +365,7 @@
   }
 
   .search-input {
-    background-color: var(--entry); /* Sfondo chiaro per il campo di input in modalità scura */
+    background-color: transparent; /* Sfondo trasparente per il campo di input in modalità scura */
     color: var(--primary);           /* Testo chiaro */
   }
 
@@ -374,6 +375,6 @@
 
   .search-input:focus {
     border-color: var(--primary);  /* Colore di focus per la modalità scura */
-    box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu */
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus blu ma più delicato */
   }
 }
