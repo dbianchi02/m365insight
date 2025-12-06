@@ -350,29 +350,31 @@
 /* Per la modalità scura */
 @media (prefers-color-scheme: dark) {
   .search-container {
-    background-color: #333; /* Colore di sfondo scuro */
+    background-color: #333; /* Colore scuro di sfondo */
+    border-radius: 50px;     /* Bordi arrotondati */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombra più forte */
   }
 
   .search-input {
     background-color: #444; /* Sfondo scuro per il campo di input */
-    color: #fff; /* Testo chiaro */
+    color: #fff;            /* Testo chiaro */
+    border: 1px solid #555; /* Bordo chiaro visibile */
+  }
+
+  .search-input::placeholder {
+    color: #bbb; /* Colore placeholder più chiaro */
   }
 
   .search-button svg {
-    stroke: #fff; /* Colore dell'icona chiaro */
+    stroke: #fff; /* Colore bianco per l'icona */
   }
-}
 
-/* Se usi data-theme (per la modalità scura personalizzata) */
-[data-theme="dark"] .search-container {
-  background-color: #333;
-}
+  .search-input:focus {
+    border-color: #0078d4; /* Colore di focus */
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.5); /* Effetto focus */
+  }
 
-[data-theme="dark"] .search-input {
-  background-color: #444;
-  color: #fff;
-}
-
-[data-theme="dark"] .search-button svg {
-  stroke: #fff;
+  .search-button:hover {
+    opacity: 0.7; /* Effetto hover sul pulsante */
+  }
 }
