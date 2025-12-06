@@ -338,24 +338,28 @@
 /* ... (altri stili come search-button, placeholder ecc. restano uguali) */
 
 /* =========================================================
-   Modalità scura: adattamenti per la barra di ricerca
+   Modalità scura: adattamenti per la barra di ricerca
 ========================================================= */
 @media (prefers-color-scheme: dark) {
-  .search-container {
-    background-color: var(--entry);  /* Sfondo scuro */
-  }
+  /* Il contenitore non deve avere sfondo */
+  .search-container {
+    background-color: transparent;
+  }
+  
+  /* CAMBIO CRUCIALE per Dark Mode */
+  .search-form {
+    /* Usa un colore scuro ma distinto (es. colore delle card/entry) */
+    background-color: var(--entry); 
+    
+    /* Ombra chiara, tipica dei temi scuri */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); 
+  }
 
-  .search-input {
-    background-color: transparent; /* Sfondo trasparente per il campo di input in modalità scura */
-    color: var(--primary);           /* Testo chiaro */
-  }
+  .search-input {
+    background-color: transparent;
+    color: var(--primary);           /* Testo chiaro */
+  }
 
-  .search-button img {
-    filter: invert(1); /* Inverte il colore dell'icona per la modalità scura */
-  }
+  /* ... (il resto del tuo codice per dark mode è corretto) */
 
-  .search-input:focus {
-    border-color: var(--primary);  /* Colore di focus per la modalità scura */
-    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra morbida al focus */
-  }
 }
