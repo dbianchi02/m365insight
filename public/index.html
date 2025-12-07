@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.152.2"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>M365 Insight</title>
+
+<meta name="description" content="Guide tecniche, automazioni e best practice su Microsoft 365 e Azure">
+<meta name="author" content="">
+<link rel="canonical" href="https://m365insight.dbianchi.it/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.42283446a98b6d166422ad90348967535b52e3e4bd075cca15fdd5fec0bacdf0.css" integrity="sha256-Qig0RqmLbRZkIq2QNIlnU1tS4&#43;S9B1zKFf3V/sC6zfA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://m365insight.dbianchi.it/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://m365insight.dbianchi.it/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://m365insight.dbianchi.it/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://m365insight.dbianchi.it/apple-touch-icon.png">
+<link rel="mask-icon" href="https://m365insight.dbianchi.it/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://m365insight.dbianchi.it/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://m365insight.dbianchi.it/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://m365insight.dbianchi.it/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://m365insight.dbianchi.it/">
+  <meta property="og:site_name" content="M365 Insight">
+  <meta property="og:title" content="M365 Insight">
+  <meta property="og:description" content="Guide tecniche, automazioni e best practice su Microsoft 365 e Azure">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="M365 Insight">
+<meta name="twitter:description" content="Guide tecniche, automazioni e best practice su Microsoft 365 e Azure">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "M365 Insight",
+  "url": "https://m365insight.dbianchi.it/",
+  "description": "",
+  "logo": "https://m365insight.dbianchi.it/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-sito.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-sito.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-sito.png">
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://m365insight.dbianchi.it/" accesskey="h" title="M365 Insight (Alt + H)">M365 Insight</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://m365insight.dbianchi.it/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://m365insight.dbianchi.it/posts/" title="News &amp; Post">
+                    <span>News &amp; Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://m365insight.dbianchi.it/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://m365insight.dbianchi.it/contatti/" title="Contact Me">
+                    <span>Contact Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"><div class="search-container">
+      <form class="search-form" action="/search/" method="get">
+        <input type="text" name="q" placeholder="Cerca articoli..." class="search-input" />
+        <button type="submit" class="search-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10" cy="10" r="7" />
+            <line x1="16" y1="16" x2="22" y2="22" />
+          </svg>
+        </button>
+      </form>
+    </div><div class="profile">
+    <div class="profile_inner">
+        <img draggable="false" src="https://m365insight.dbianchi.it/images/davide.png" alt="profile image" title=""
+            height="180" width="180" />
+        <h1>Davide Bianchi</h1>
+        <span>Sistemista Microsoft 365 &amp; Azure · Sicurezza · Automazione</span>
+<div class="social-icons">
+  <a href="" class="social-icon">
+    <img src="/images/linkedin-icon.png" alt="LinkedIn">
+  </a>
+  
+</div>
+        <div class="buttons">
+            <a class="button" href="/posts/" rel="noopener" title="Articoli">
+                <span class="button-inner">
+                    Articoli
+                </span>
+            </a>
+            <a class="button" href="/about/" rel="noopener" title="Chi sono">
+                <span class="button-inner">
+                    Chi sono
+                </span>
+            </a>
+            <a class="button" href="/contatti/" rel="noopener" title="Contattami">
+                <span class="button-inner">
+                    Contattami
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<section class="db-welcome-box db-fade-in-slow">
+    <h1 class="db-title-home">Benvenuto su M365 Insight 👋 </h1>
+    <h2 class="db-subtitle-home">Microsoft 365 · Sicurezza · Governance · Automazione · Reportistica</h2>
+    <p class="db-intro-text">
+        Questo sito raccoglie guide tecniche, procedure operative, automazioni e best practice che utilizzo ogni giorno nel mondo Microsoft 365 e Azure. L’obiettivo è offrire soluzioni pratiche, chiare e realmente applicabili per sistemisti, amministratori IT e professionisti del cloud.
+    </p>
+</section><section class="db-home-grid db-fade-in-slow">
+      <div class="db-card db-latest-posts">
+        <h2 class="db-section-title">Latest posts</h2>
+        <p class="db-section-subtitle">
+          Le ultime novità su Microsoft 365, Azure e automazione.
+        </p><ul class="db-latest-list"><li class="db-latest-item">
+            <a href="/posts/microsoft-365-copilot-report/" class="db-latest-link">
+              Monitoraggio di Microsoft 365 Copilot: Report dettagliati e dashboard aggregate
+            </a>
+            <span class="db-latest-meta">
+              28/11/2025
+            </span>
+          </li><li class="db-latest-item">
+            <a href="/posts/copilot-agent---check-compromissioni-account/" class="db-latest-link">
+              Come analizzare i log di Microsoft Entra ID per individuare compromissioni account 🛡️ 
+            </a>
+            <span class="db-latest-meta">
+              24/11/2025
+            </span>
+          </li><li class="db-latest-item">
+            <a href="/posts/send-mail-using-sharedmailbox/" class="db-latest-link">
+              Inviare una mail da una shared mailbox con Microsoft Graph (app-only)
+            </a>
+            <span class="db-latest-meta">
+              22/11/2025
+            </span>
+          </li></ul>
+
+        <a class="db-cta" href="/posts/">
+          Vedi tutti gli articoli
+        </a>
+      </div>
+
+      <div class="db-card db-novita">
+        <h2 class="db-section-title">Novità 2025</h2>
+        <p class="db-section-subtitle">
+          Aggiornamenti su script PowerShell, governance M365 e progetti reali.
+        </p>
+        <ul class="db-novita-list">
+          <li>Playbook di governance per Teams &amp; SharePoint</li>
+          <li>Script di automazione per Microsoft 365 e Azure</li>
+          <li>Linee guida su sicurezza, accessi e audit</li>
+        </ul>
+      </div>
+    </section><section class="db-competence-grid db-fade-in-slow">
+    <h2 class="db-subtitle-home">Le mie aree di competenza</h2>
+    
+    <p class="db-competence-intro">
+        Esplora i pilastri della mia expertise: guide approfondite, procedure operative e best practice validate sul campo per aiutarti a navigare nel mondo Microsoft 365 e Azure. Questi box sono il punto di partenza ideale per trovare velocemente soluzioni tecniche e approfondimenti sui temi più critici dell'infrastruttura Cloud moderna.
+    </p>
+
+    <div class="db-card-container">
+        
+        <a href="/tags/identità-sicurezza/" class="db-competence-card db-security">
+            <span class="icon">🔐</span>
+            <h3>Identity & Security</h3>
+            <p><b>Proteggi il tuo ambiente Cloud.</b> Troverai articoli su Entra ID (Azure AD), configurazione di Conditional Access, MFA, gestione delle identità ibride e best practice per rafforzare le difese contro le minacce informatiche su tutti i servizi M365.</p>
+        </a>
+
+        <a href="/tags/governance/" class="db-competence-card db-governance">
+            <span class="icon">🗂️</span>
+            <h3>Governance & Compliance</h3>
+            <p><b>Mantieni il controllo e la conformità.</b> Guida alla creazione di policy di gestione (dati, risorse, accessi), audit e monitoraggio. Approfondimenti sulla conformità normativa e sulla gestione del ciclo di vita dei contenuti in SharePoint e Teams.</p>
+        </a>
+
+        <a href="/tags/adoption-m365/" class="db-competence-card db-cloud">
+            <span class="icon">📊</span>
+            <h3>Analytics & Adoption Microsoft 365</h3>
+            <p><b>Guida l’adozione con i dati.</b> Articoli dedicati alle novità del mondo Microsoft 365, alla reportistica d’utilizzo e ai migliori strumenti per misurare e guidare l’adoption della piattaforma in azienda.</p>
+        </a>
+
+        <a href="/tags/automazione-it/" class="db-competence-card db-automation">
+            <span class="icon">⚙️</span>
+            <h3>IT Automation & Scripting</h3>
+            <p><b>Semplifica la routine con lo scripting.</b> Risorse complete su PowerShell, Azure CLI e Microsoft Graph per automatizzare l'amministrazione di utenti, licenze e configurazioni. Include l'uso di Logic Apps e Power Automate per flussi complessi.</p>
+        </a>
+        
+    </div>
+</section>
+    </main>
+    
+<footer class="footer">
+<div class="social-icons">
+  <a href="" class="social-icon">
+    <img src="/images/linkedin-icon.png" alt="LinkedIn">
+  </a>
+  
+</div>
+        <span>&copy; 2025 <a href="https://m365insight.dbianchi.it/">M365 Insight</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

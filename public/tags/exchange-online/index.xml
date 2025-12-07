@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchange Online on M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/tags/exchange-online/</link>
+    <description>Recent content in Exchange Online on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Nov 2025 10:00:00 +0200</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/tags/exchange-online/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inviare una mail da una shared mailbox con Microsoft Graph (app-only)</title>
+      <link>https://m365insight.dbianchi.it/posts/send-mail-using-sharedmailbox/</link>
+      <pubDate>Sat, 22 Nov 2025 10:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/send-mail-using-sharedmailbox/</guid>
+      <description>Come configurare un’app in Entra ID e i permessi necessari per inviare email da una shared mailbox tramite Microsoft Graph in modalità app-only.</description>
+    </item>
+  </channel>
+</rss>

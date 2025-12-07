@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/</link>
+    <description>Recent content on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Nov 2025 13:00:00 +0100</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoraggio di Microsoft 365 Copilot: Report dettagliati e dashboard aggregate</title>
+      <link>https://m365insight.dbianchi.it/posts/microsoft-365-copilot-report/</link>
+      <pubDate>Fri, 28 Nov 2025 13:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/microsoft-365-copilot-report/</guid>
+      <description>Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare adozione e governance.</description>
+    </item>
+    <item>
+      <title>Come analizzare i log di Microsoft Entra ID per individuare compromissioni account 🛡️ </title>
+      <link>https://m365insight.dbianchi.it/posts/copilot-agent---check-compromissioni-account/</link>
+      <pubDate>Mon, 24 Nov 2025 15:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/copilot-agent---check-compromissioni-account/</guid>
+      <description>Scopri come configurare l&amp;#39;agente in Microsoft 365 Copilot per automatizzare l&amp;#39;analisi dei log di Entra ID, individuare accessi anomali e generare risposte strutturate per l&amp;#39;Incident Response.</description>
+    </item>
+    <item>
+      <title>Inviare una mail da una shared mailbox con Microsoft Graph (app-only)</title>
+      <link>https://m365insight.dbianchi.it/posts/send-mail-using-sharedmailbox/</link>
+      <pubDate>Sat, 22 Nov 2025 10:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/send-mail-using-sharedmailbox/</guid>
+      <description>Come configurare un’app in Entra ID e i permessi necessari per inviare email da una shared mailbox tramite Microsoft Graph in modalità app-only.</description>
+    </item>
+    <item>
+      <title>Configurare l’auto-rilevamento della posizione di lavoro in Microsoft Teams</title>
+      <link>https://m365insight.dbianchi.it/posts/automatic-work-location/</link>
+      <pubDate>Fri, 21 Nov 2025 17:30:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/automatic-work-location/</guid>
+      <description>Scopri come automatizzare la rilevazione della presenza in ufficio in Teams utilizzando SSID e BSSID della rete Wi-Fi aziendale, ottimizzando la gestione degli spazi.</description>
+    </item>
+    <item>
+      <title>Blocco della creazione di gruppi pubblici in Microsoft Teams tramite Sensitivity Labels</title>
+      <link>https://m365insight.dbianchi.it/posts/block-public-teams/</link>
+      <pubDate>Thu, 20 Nov 2025 10:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/block-public-teams/</guid>
+      <description>Scopri come impedire la creazione di team pubblici in Microsoft Teams utilizzando le Sensitivity Labels di Microsoft Purview, garantendo maggiore controllo e sicurezza.</description>
+    </item>
+    <item>
+      <title>Welcome Post</title>
+      <link>https://m365insight.dbianchi.it/posts/welcome-post/</link>
+      <pubDate>Mon, 17 Nov 2025 20:12:20 +0000</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/welcome-post/</guid>
+      <description>Introduzione al blog M365 Insight</description>
+    </item>
+    <item>
+      <title>Chi sono</title>
+      <link>https://m365insight.dbianchi.it/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://m365insight.dbianchi.it/about/</guid>
+      <description>&lt;h1 id=&#34;-davide-bianchi&#34;&gt;👤 Davide Bianchi&lt;/h1&gt;
+&lt;p&gt;Sono un &lt;strong&gt;professionista IT&lt;/strong&gt; specializzato nella gestione e nella sicurezza degli ambienti &lt;strong&gt;Microsoft 365 e Azure&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;-il-mio-percorso&#34;&gt;🛣️ Il Mio Percorso&lt;/h3&gt;
+&lt;p&gt;Il mio percorso non è iniziato nell’informatica: ho conseguito un diploma da Geometra, ma ben presto ho scoperto una passione molto più forte per la tecnologia e la gestione dei servizi IT.&lt;/p&gt;
+&lt;p&gt;Dal &lt;strong&gt;2021&lt;/strong&gt; ho deciso di trasformare questa passione in professione, completando un percorso ITS come &lt;strong&gt;Cloud Administrator &amp;amp; Security Engineer&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contatti</title>
+      <link>https://m365insight.dbianchi.it/contatti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://m365insight.dbianchi.it/contatti/</guid>
+      <description>Se vuoi confrontarti su progetti Microsoft 365, governance, sicurezza o automazioni IT, puoi contattarmi tramite i canali seguenti:</description>
+    </item>
+  </channel>
+</rss>

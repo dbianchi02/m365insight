@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sicurezza M365 on M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/tags/sicurezza-m365/</link>
+    <description>Recent content in Sicurezza M365 on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Nov 2025 10:00:00 +0200</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/tags/sicurezza-m365/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blocco della creazione di gruppi pubblici in Microsoft Teams tramite Sensitivity Labels</title>
+      <link>https://m365insight.dbianchi.it/posts/block-public-teams/</link>
+      <pubDate>Thu, 20 Nov 2025 10:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/block-public-teams/</guid>
+      <description>Scopri come impedire la creazione di team pubblici in Microsoft Teams utilizzando le Sensitivity Labels di Microsoft Purview, garantendo maggiore controllo e sicurezza.</description>
+    </item>
+  </channel>
+</rss>

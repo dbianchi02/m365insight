@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft 365 Copilot on M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/tags/microsoft-365-copilot/</link>
+    <description>Recent content in Microsoft 365 Copilot on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Nov 2025 13:00:00 +0100</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/tags/microsoft-365-copilot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoraggio di Microsoft 365 Copilot: Report dettagliati e dashboard aggregate</title>
+      <link>https://m365insight.dbianchi.it/posts/microsoft-365-copilot-report/</link>
+      <pubDate>Fri, 28 Nov 2025 13:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/microsoft-365-copilot-report/</guid>
+      <description>Scopri come monitorare Microsoft 365 Copilot con report nominali e dashboard aggregate per ottimizzare adozione e governance.</description>
+    </item>
+    <item>
+      <title>Come analizzare i log di Microsoft Entra ID per individuare compromissioni account 🛡️ </title>
+      <link>https://m365insight.dbianchi.it/posts/copilot-agent---check-compromissioni-account/</link>
+      <pubDate>Mon, 24 Nov 2025 15:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/copilot-agent---check-compromissioni-account/</guid>
+      <description>Scopri come configurare l&amp;#39;agente in Microsoft 365 Copilot per automatizzare l&amp;#39;analisi dei log di Entra ID, individuare accessi anomali e generare risposte strutturate per l&amp;#39;Incident Response.</description>
+    </item>
+  </channel>
+</rss>
