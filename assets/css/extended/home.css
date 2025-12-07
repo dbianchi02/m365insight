@@ -332,7 +332,6 @@
   font-size: 16px;
   
   /* Background leggero per farlo vedere bene */
-  background-color: #f2f2f2;  /* Aggiungiamo un colore di sfondo chiaro */
   color: var(--primary);       /* Colore del testo */
   border-radius: 50px;         /* Bordi arrotondati */
 }
@@ -377,7 +376,6 @@
   }
 
   .search-input {
-    background-color: #444;  /* Sfondo scuro per la modalità scura */
     color: var(--primary);    /* Testo chiaro */
   }
 
