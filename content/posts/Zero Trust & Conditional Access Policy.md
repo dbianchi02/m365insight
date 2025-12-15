@@ -54,6 +54,8 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 - **Conditions → Client apps**: Other clients / legacy auth
 - **Grant**: Block access
 
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-block-legacy-authentication)
+
 ---
 
 ### 2) Entra Token Protection (Session control)
@@ -68,6 +70,8 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 - **Access controls → Session**: **Require token protection for sign-in sessions**
 - **Enable**: Report-only → On
 
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-token-protection)
+
 ---
 
 ### 3) Require MFA for all users (eccezione Trusted location)
@@ -81,9 +85,11 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 - **Locations**: Exclude “Trusted named locations”
 - **Grant**: Require MFA *(oppure)* Require authentication strength: **MFA strength**
 
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-mfa-strength)
+
 ---
 
-### 4) Require MFA for Administrators
+### 4) Require phishing-resistant MFA for Administrators
 
 **Obiettivo:** proteggere gli account privilegiati con un livello di assurance superiore.
 
@@ -94,32 +100,11 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 - **Cloud apps**: Microsoft Admin Portals (almeno) o All cloud apps
 - **Grant**: Require authentication strength → **Phishing-resistant MFA strength**
 
----
-
-### 5) Require remediation for risky sign-in (Sign-in risk)
-
-**Obiettivo:** quando Entra rileva un **sign-in rischioso**, richiedi remediation (tipicamente MFA) oppure blocchi se l’utente non è registrato.
-
-**Implementazione tipica**
-- **Condition → Sign-in risk**: Medium/High (o High per partire conservativi)
-- **Grant**: Require MFA
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-admin-phish-resistant-mfa)
 
 ---
 
-### 6) Require remediation for risky user (User risk)
-
-**Obiettivo:** se è l’**identità** ad essere considerata compromessa (user risk), la remediation tipica è **password change**.
-
-**Implementazione tipica**
-- **Condition → User risk**: High
-- **Grant**: Require password change
-
-> Nota licensing: le funzionalità risk-based richiedono **Microsoft Entra ID Protection** (tipicamente Entra ID P2 / Entra Suite).
-
-
----
-
-### 7) Admins: accesso ai portali admin solo da device compliant/hybrid joined
+### 5) Admins: accesso ai portali admin solo da device compliant/hybrid joined
 
 **Obiettivo:** ridurre drasticamente la probabilità che un furto credenziali admin diventi un takeover del tenant.
 
@@ -134,6 +119,34 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 
 > Nota: “compliant” presuppone una strategia MDM/compliance (tipicamente Intune). Senza compliance policy reali, questa CAP non si comporta come ti aspetti.
 
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-alt-admin-device-compliand-hybrid)
+
+---
+
+### 6) Require remediation for risky sign-in (Sign-in risk)
+
+**Obiettivo:** quando Microsoft Entra rileva un **sign-in rischioso**, richiedi remediation (tipicamente MFA) oppure blocchi se l’utente non è registrato.
+
+**Implementazione tipica**
+- **Condition → Sign-in risk**: Medium/High (o High per partire conservativi)
+- **Grant**: Require MFA
+
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-sign-in)
+
+---
+
+### 7) Require remediation for risky user (User risk)
+
+**Obiettivo:** se è l’**identità** ad essere considerata compromessa (user risk), la remediation tipica è **password change**.
+
+**Implementazione tipica**
+- **Condition → User risk**: High
+- **Grant**: Require password change
+
+> Nota licensing: le funzionalità risk-based richiedono **Microsoft Entra ID Protection** (tipicamente Entra ID P2 / Entra Suite).
+
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-user)
+
 ---
 
 ### 8) CAP Bonus - Force Terms of Use
@@ -145,6 +158,10 @@ Di seguito le policy che analizzeremo e **come le ho denominate nel mio tenant**
 - Policy CA:
   - **Target resources**: Microsoft Admin Portals (o app sensibili)
   - **Grant**: Require terms of use
+
+* [Configurazione dettagliata – Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-require-terms-of-use)
+
+![ToU](/images/posts/security/tou.png)
 
 ---
 
