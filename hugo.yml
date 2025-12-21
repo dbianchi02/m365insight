@@ -73,6 +73,8 @@ imaging:
   quality: 75
   resampleFilter: Box
 
+googleAnalytics: "G-50R88HRP0S"
+
 outputs:
   home:
     - HTML
