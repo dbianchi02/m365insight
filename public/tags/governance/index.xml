@@ -6,8 +6,15 @@
     <description>Recent content in Governance on M365 Insight</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Nov 2025 17:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 18:00:00 +0200</lastBuildDate>
     <atom:link href="https://m365insight.dbianchi.it/tags/governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SharePoint Advanced Management: governance avanzata e controllo dei siti in Microsoft 365</title>
+      <link>https://m365insight.dbianchi.it/posts/sharepoint-advanced-management/</link>
+      <pubDate>Mon, 15 Dec 2025 18:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/sharepoint-advanced-management/</guid>
+      <description>Panoramica su SharePoint Advanced Management: come migliorare governance, sicurezza e visibilità dei siti SharePoint Online con policy e report dedicati.</description>
+    </item>
     <item>
       <title>Configurare l’auto-rilevamento della posizione di lavoro in Microsoft Teams</title>
       <link>https://m365insight.dbianchi.it/posts/automatic-work-location/</link>

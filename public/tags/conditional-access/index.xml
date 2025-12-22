@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Conditional Access on M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/tags/conditional-access/</link>
+    <description>Recent content in Conditional Access on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Dec 2025 19:00:00 +0100</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/tags/conditional-access/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le migliori Conditional Access Policy per proteggere Microsoft 365 con Zero Trust</title>
+      <link>https://m365insight.dbianchi.it/posts/zero-trust--conditional-access-policy/</link>
+      <pubDate>Mon, 15 Dec 2025 19:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/zero-trust--conditional-access-policy/</guid>
+      <description>Una guida pratica (e “battle-tested”) alle Conditional Access Policy fondamentali: dall’MFA alla protezione token, fino al blocco dell’accesso admin solo da dispositivi compliant/hybrid joined.</description>
+    </item>
+  </channel>
+</rss>

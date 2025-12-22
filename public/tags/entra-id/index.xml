@@ -6,8 +6,15 @@
     <description>Recent content in Entra ID on M365 Insight</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Nov 2025 15:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 19:00:00 +0100</lastBuildDate>
     <atom:link href="https://m365insight.dbianchi.it/tags/entra-id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le migliori Conditional Access Policy per proteggere Microsoft 365 con Zero Trust</title>
+      <link>https://m365insight.dbianchi.it/posts/zero-trust--conditional-access-policy/</link>
+      <pubDate>Mon, 15 Dec 2025 19:00:00 +0100</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/zero-trust--conditional-access-policy/</guid>
+      <description>Una guida pratica (e “battle-tested”) alle Conditional Access Policy fondamentali: dall’MFA alla protezione token, fino al blocco dell’accesso admin solo da dispositivi compliant/hybrid joined.</description>
+    </item>
     <item>
       <title>Come analizzare i log di Microsoft Entra ID per individuare compromissioni account 🛡️ </title>
       <link>https://m365insight.dbianchi.it/posts/copilot-agent---check-compromissioni-account/</link>

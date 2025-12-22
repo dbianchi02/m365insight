@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SharePoint on M365 Insight</title>
+    <link>https://m365insight.dbianchi.it/tags/sharepoint/</link>
+    <description>Recent content in SharePoint on M365 Insight</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Dec 2025 18:00:00 +0200</lastBuildDate>
+    <atom:link href="https://m365insight.dbianchi.it/tags/sharepoint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SharePoint Advanced Management: governance avanzata e controllo dei siti in Microsoft 365</title>
+      <link>https://m365insight.dbianchi.it/posts/sharepoint-advanced-management/</link>
+      <pubDate>Mon, 15 Dec 2025 18:00:00 +0200</pubDate>
+      <guid>https://m365insight.dbianchi.it/posts/sharepoint-advanced-management/</guid>
+      <description>Panoramica su SharePoint Advanced Management: come migliorare governance, sicurezza e visibilità dei siti SharePoint Online con policy e report dedicati.</description>
+    </item>
+  </channel>
+</rss>
