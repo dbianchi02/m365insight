@@ -193,11 +193,13 @@
 
 </script>
 
-<!-- Includi Fuse.js (se non è già incluso) -->
-<script src="/themes/PaperMod/assets/js/fuse.basic.min.js"></script> 
+<!-- Carica Fuse.js per la ricerca -->
+{{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
+<script defer src="{{ $fusejs.RelPermalink }}"></script>
 
-<!-- Includi il tuo script di ricerca -->
-<script src="/themes/PaperMod/assets/js/search.js"></script>
+<!-- Carica script ricerca header -->
+{{- $headerSearch := resources.Get "js/header-search.js" | resources.Minify }}
+<script defer src="{{ $headerSearch.RelPermalink }}"></script>
 
 {{- end }}
 
