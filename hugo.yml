@@ -13,6 +13,9 @@ params:
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
   ShowToc: true
+  analytics:
+    google:
+      GA4: "G-50R88HRP0S"
 
   homeInfoParams: {}
 
@@ -72,11 +75,6 @@ resourceDir: "assets"
 imaging:
   quality: 75
   resampleFilter: Box
-
-params:
-  analytics:
-    google:
-      GA4: "G-50R88HRP0S"
 
 outputs:
   home:
