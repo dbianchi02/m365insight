@@ -230,8 +230,3 @@
 {{- $headerSearchMin := $headerSearch | resources.Minify }}
 <script defer crossorigin="anonymous" src="{{ $headerSearchMin.RelPermalink }}"></script>
 {{- end }}
-```
-
-**Verifica che il file esista in:**
-```
-themes/PaperMod/assets/js/header-search.js
