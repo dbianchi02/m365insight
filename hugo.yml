@@ -16,6 +16,7 @@ params:
   analytics:
     google:
       GA4: "G-50R88HRP0S"
+    clarity: "upgcyjelsc"
 
   homeInfoParams: {}
 
