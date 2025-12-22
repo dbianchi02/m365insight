@@ -1,4 +1,4 @@
-{{ with site.GoogleAnalytics }}
+{{- with site.Params.analytics.google.GA4 -}}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
@@ -8,4 +8,4 @@
   gtag('js', new Date());
   gtag('config', '{{ . }}');
 </script>
-{{ end }}
+{{- end -}}

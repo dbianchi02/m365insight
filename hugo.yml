@@ -73,7 +73,10 @@ imaging:
   quality: 75
   resampleFilter: Box
 
-googleAnalytics: "G-50R88HRP0S"
+params:
+  analytics:
+    google:
+      GA4: "G-50R88HRP0S"
 
 outputs:
   home:
