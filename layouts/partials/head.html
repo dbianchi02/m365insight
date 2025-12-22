@@ -218,3 +218,20 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-sito.png">
 
 {{- end -}}
+
+<!-- Script ricerca header - caricato sempre -->
+{{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
+{{- if $fusejs }}
+<script defer crossorigin="anonymous" src="{{ $fusejs.RelPermalink }}"></script>
+{{- end }}
+
+{{- $headerSearch := resources.Get "js/header-search.js" }}
+{{- if $headerSearch }}
+{{- $headerSearchMin := $headerSearch | resources.Minify }}
+<script defer crossorigin="anonymous" src="{{ $headerSearchMin.RelPermalink }}"></script>
+{{- end }}
+```
+
+**Verifica che il file esista in:**
+```
+themes/PaperMod/assets/js/header-search.js
