@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Zero Trust Assessment: analizzare e migliorare la postura di sicurezza del tenant"
-date: 2025-11-24T10:00:00+02:00
+date: 2025-12-24T10:00:00+02:00
 draft: false
 tags: ["identità-sicurezza", "automazione-it", "Zero Trust", "Microsoft Graph", "PowerShell"]
 authors: ["Davide Bianchi"]
