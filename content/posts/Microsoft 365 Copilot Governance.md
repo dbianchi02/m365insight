@@ -101,7 +101,7 @@ Una volta ottenuta questa lista, è necessario:
 4. Documentare le eccezioni  
 
 Lo script dovrebbe poi girare in maniera periodica per intercettare tempestivamente nuovi gruppi pubblici.
-➡️ **Articolo correlato:** [Gestire e monitorare i gruppi M365 pubblici con PowerShell](/content/posts/Export_gruppi_pubblici.md)
+➡️ **Articolo correlato:** [Gestire e monitorare i gruppi M365 pubblici con PowerShell](/posts/export_gruppi_pubblici/)
 
 #### Step 2.2: Prevenzione tramite Sensitivity Labels
 
