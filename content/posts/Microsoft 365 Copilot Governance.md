@@ -101,14 +101,14 @@ Una volta ottenuta questa lista, è necessario:
 4. Documentare le eccezioni  
 
 Lo script dovrebbe poi girare in maniera periodica per intercettare tempestivamente nuovi gruppi pubblici.
-➡️ **Articolo correlato:** [Gestire e monitorare i gruppi M365 pubblici con PowerShell](/posts/export_gruppi_pubblici/)
+➡️ **Articolo correlato:** [Gestire e monitorare i gruppi M365 pubblici con PowerShell](https://m365insight.dbianchi.it/posts/export_gruppi_pubblici/)
 
 #### Step 2.2: Prevenzione tramite Sensitivity Labels
 
 Una volta fatta pulizia, la prevenzione diventa fondamentale.
 
 La soluzione più efficace è l’utilizzo delle **Sensitivity Labels** per inibire la creazione di gruppi M365 pubblici da parte degli utenti, aumentando controllo, governance e limitando la superficie di accesso di Copilot.
-➡️ **Articolo correlato:** [Controllare i gruppi M365 con Sensitivity Labels](content/posts/Block_Public_Teams.md)
+➡️ **Articolo correlato:** [Controllare i gruppi M365 con Sensitivity Labels](https://m365insight.dbianchi.it/posts/block_public_teams/)
 
 La logica è semplice ma potente: invece di correggere continuamente gli errori degli utenti, create un sistema che li previene alla fonte. Gli utenti potranno ancora creare gruppi, ma con impostazioni di privacy controllate e appropriate al contenuto che stanno condividendo.
 
@@ -353,7 +353,7 @@ Microsoft fornisce due strumenti principali per questo scopo:
 **Microsoft 365 Admin Center** e **Viva Insights** (Incluso a metà 2025 nel service plan di Copilot)
 
 Non voglio entrare nei dettagli tecnici di questi strumenti in questo articolo, perché ho già dedicato un articolo completo alla reportistica di utilizzo di Copilot, dove trovate anche esempi di dashboard e come interpretare le metriche.
-➡️ **Articolo correlato:** [Monitoraggio e analisi utilizzo di Microsoft 365 Copilot](/content/posts/Microsoft_365_Copilot_Report.md)
+➡️ **Articolo correlato:** [Monitoraggio e analisi utilizzo di Microsoft 365 Copilot](https://m365insight.dbianchi.it/posts/microsoft_365_copilot_report/)
 
 ---
 
