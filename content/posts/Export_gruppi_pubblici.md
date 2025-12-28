@@ -212,7 +212,7 @@ Questo script rappresenta solo il primo passo.
 Per una governance realmente efficace è consigliabile affiancarlo a:
 
 **Prevenzione**  
-Come descritto nel mio articolo ➡️ [Controllare i gruppi M365 con Sensitivity Labels](content/posts/Block_Public_Teams.md), l’utilizzo delle **sensitivity labels** consente di bloccare la creazione di nuovi gruppi pubblici, permettendo solo gruppi privati.
+Come descritto nel mio articolo ➡️ [Controllare i gruppi M365 con Sensitivity Labels](https://m365insight.dbianchi.it/posts/block_public_teams/), l’utilizzo delle **sensitivity labels** consente di bloccare la creazione di nuovi gruppi pubblici, permettendo solo gruppi privati.
 
 **Formazione**  
 I dati raccolti aiutano a identificare dipartimenti o utenti che creano frequentemente gruppi pubblici, consentendo di pianificare sessioni di formazione mirate.
