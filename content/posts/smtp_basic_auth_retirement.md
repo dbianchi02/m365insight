@@ -4,7 +4,7 @@ date: 2026-01-24T11:00:00+02:00
 draft: false
 tags: ["identità-sicurezza", "Exchange Online", "Security", "SMTP", "Authentication", "OAuth", "Microsoft 365"]
 authors: ["Davide Bianchi"]
-description: "Microsoft rimuove la Basic Authentication per SMTP AUTH in Exchange Online da marzo 2026. Guida alle alternative: OAuth, High Volume Email, Azure Communication Services e soluzioni ibride."
+description: "Microsoft rimuoverà la Basic Authentication per SMTP AUTH in Exchange Online da marzo 2026. Guida alle alternative: OAuth, High Volume Email, Azure Communication Services e soluzioni ibride."
 ---
 
 ## Introduzione
@@ -59,6 +59,8 @@ Microsoft ha aggiornato le tempistiche nel giugno 2025:
 4. Controlla la colonna **"Authentication Protocol"**:
    - **"Modern Authentication"** = OAuth (non sarà impattato) ✅
    - **"Basic Authentication"** = richiede migrazione ⚠️
+
+![SMTP-BasicAuth-Report](/images/posts/security/SMTP-BasicAuth-Report.png)
 
 Questo report ti permette di identificare esattamente quali client, applicazioni o dispositivi necessitano aggiornamento.
 

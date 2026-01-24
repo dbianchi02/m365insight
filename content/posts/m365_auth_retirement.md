@@ -125,7 +125,8 @@ Il metodo viene sostituito da `AcquireTokenAsync` che acquisisce token OAuth.
 
 **Gestione della Multi-Factor Authentication:**
 
-Se hai abilitato MFA, devi passare un quarto parametro al costruttore:
+Se la Multi-Factor Authentication è abilitata, è necessario passare un nuovo parametro al costruttore dell'oggetto SharePointOnlineCredentials. 
+Ecco come va modificato il codice:
 
 ```csharp
 SharePointOnlineCredentials credentials = new SharePointOnlineCredentials(
