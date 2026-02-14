@@ -4,7 +4,7 @@ date: 2026-01-24T12:00:00+02:00
 draft: false
 tags: ["identità-sicurezza", "SharePoint", "Authentication", "IDCRL", "OAuth", "Microsoft 365"]
 authors: ["Davide Bianchi"]
-description: "Microsoft rimuove l'autenticazione IDCRL da SharePoint Online entro maggio 2026. Guida completa alla migrazione verso OAuth e MSAL con timeline, verifiche e soluzioni pratiche."
+description: "Microsoft rimuoverà l'autenticazione IDCRL da SharePoint Online entro maggio 2026. Guida completa alla migrazione verso OAuth e MSAL con timeline, verifiche e soluzioni pratiche."
 ---
 
 ## Introduzione
@@ -54,7 +54,7 @@ Get-SPOTenant | Select AllowLegacyAuthProtocolsEnabledSetting, LegacyAuthProtoco
 
 ## Verificare l'utilizzo di IDCRL
 
-Microsoft fornisce soluzioni di auditing per identificare se la tua organizzazione utilizza IDCRL.
+Microsoft fornisce anche soluzioni di auditing per identificare se la tua organizzazione utilizza IDCRL.
 
 ### Accesso agli strumenti di monitoraggio tramite Microsoft Purview
 
