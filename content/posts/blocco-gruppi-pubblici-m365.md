@@ -28,7 +28,7 @@ Le Sensitivity Labels permettono agli amministratori di definire regole di priva
 Prima di procedere, assicurati di avere:
 
 - Una **licenza Microsoft 365** che supporti le Sensitivity Labels per Teams, SharePoint e Gruppi (tipicamente M365 E3 con add-on o E5, o equivalenti).
-- Accesso al **Microsoft Purview Compliance Portal** (`https://compliance.microsoft.com`).
+- Accesso al **Microsoft Purview Compliance Portal** (`https://purview.microsoft.com`).
 - Permessi di amministratore per creare e pubblicare etichette.
 
 ---
