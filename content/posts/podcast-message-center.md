@@ -3,7 +3,7 @@ title: "Da Audio Overview a Podcast Automatico: come ho trasformato il Message C
 date: 2026-03-24T07:00:00+02:00
 draft: false
 tags: ["Azure AI Foundry", "Microsoft 365", "Automazione", "Message Center", "PowerShell"]
-authors: ["Davide Bianchi"]
+author: ["Davide Bianchi"]
 description: "Come ho costruito un sistema completamente automatizzato che ogni mattina genera un podcast a due voci dal Message Center di Microsoft 365 e lo invia su Telegram, usando PowerShell e Azure AI Foundry."
 ---
 
