@@ -88,16 +88,6 @@ L'intera soluzione gira su infrastruttura Microsoft, con una sola eccezione este
 
 ---
 
-## Cosa ho imparato
-
-Costruire questa soluzione ha confermato alcune cose che sospettavo e me ne ha insegnate di nuove.
-
-**Il prompt engineering fa la differenza.** Non basta dire al modello "genera un podcast". Bisogna definire il numero di battute per tipo di messaggio, l'ordine di priorità, il tono di ogni voce, le transizioni, il riepilogo finale. Ho rilasciato almeno sei versioni del system prompt prima di arrivare a un output che mi convincesse davvero (forse ancora oggi non sono completamente convinto e sicuramente con il passare del tempo lo migliorerò).
-
-**Partire da ciò che già esiste.** Lo script di raccolta dei messaggi è una semplice chiamata API. Azure AI Foundry era già attivo nella mia subscription. L'App Registration era già configurata. Il lavoro vero è stato capire come connettere i pezzi, non costruirli da zero.
-
----
-
 ## Sviluppi futuri
 
 La soluzione è operativa, ma ci sono direzioni in cui la farei evolvere:
@@ -110,5 +100,3 @@ La soluzione è operativa, ma ci sono direzioni in cui la farei evolvere:
 ## Conclusione
 
 L'idea era semplice: ascoltare gli aggiornamenti di Microsoft 365 in macchina invece di leggerli alla scrivania. Ogni mattina alle 07:25 mi arriva un messaggio su Telegram con un podcast di dieci minuti. Alex e Sara mi aggiornano su tutto quello che è cambiato nel tenant, partendo dai retirement critici e finendo con le nuove funzionalità. Questa soluzione mi permette di arrivare in ufficio già aggiornato.
-
----
