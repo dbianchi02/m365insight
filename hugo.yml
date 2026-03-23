@@ -13,6 +13,7 @@ params:
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
   ShowToc: true
+  author: "Davide Bianchi"
   analytics:
     google:
       GA4: "G-50R88HRP0S"
