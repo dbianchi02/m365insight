@@ -26,8 +26,6 @@ Da lì ho iniziato a ragionare su come replicare quella stessa esperienza in mod
 
 L'architettura che ho costruito si articola in quattro passaggi eseguiti ogni mattina in sequenza, orchestrati da uno script master.
 
-![PodcastWorkflow](/images/posts/automazione/podcast-flow-diagram.png)
-
 ### 1. Raccolta dei messaggi
 
 Il punto di partenza è una chiamata alle **Microsoft Graph API** con il permesso `ServiceMessage.Read.All`, autenticata tramite un'App Registration con certificato. I messaggi delle ultime 24 ore vengono estratti e salvati in un file JSON strutturato con titolo, servizio coinvolto, tag, date e corpo del testo.
@@ -85,6 +83,8 @@ L'intera soluzione gira su infrastruttura Microsoft, con una sola eccezione este
 | Orchestrazione VM | Azure Automation Runbook|
 | VM di esecuzione | Azure VM (Windows Server 2025) |
 | Consegna | Telegram Bot API |
+
+![PodcastWorkflow](/images/posts/automazione/podcast-flow-diagram.png)
 
 ---
 
